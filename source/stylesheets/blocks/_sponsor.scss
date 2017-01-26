@@ -1,0 +1,162 @@
+.sponsor-container__content {
+  @extend .team-container__content
+}
+.sponsor-container__content-two-columns {
+  display: flex;
+}
+.sponsor-container__content-column {
+  width: 450px;
+	 padding: 50px 0 0;
+ 	@include mq {
+		  width: 100%;
+	  	padding: 0;
+	 }
+}
+.sponsor {
+  display: flex;
+  margin-bottom: 46px;
+	 @include mq {
+	   flex-direction: column;
+    margin-bottom: 36px;
+	 }
+}
+.sponsor__logo {
+  margin-right: 40px;
+  border: 6px solid rgba($black, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  align-items: flex-start;
+  img {
+    width: 100%;
+  }
+	 @include mq {
+    margin: 0 auto;
+	 }
+}
+.sponsor-list__xl {
+	 .sponsor__logo {
+		  width: 340px;
+    height: 340px;
+    @include mq {
+      width: 260px;
+      height: 260px;
+	   }
+	 }
+}
+.sponsor-list__lg {
+	 .sponsor__logo {
+		  width: 320px;
+    height: 320px;
+    @include mq {
+      width: 240px;
+      height: 240px;
+	   }
+	 }
+}
+.sponsor-list__md {
+	 .sponsor__logo {
+		  width: 260px;
+    height: 260px;
+    @include mq {
+      width: 200px;
+      height: 200px;
+	   }
+	 }
+}
+.sponsor-list__md-2 {
+	 .sponsor__logo {
+		  width: 220px;
+    height: 220px;
+    @include mq {
+      width: 180px;
+      height: 180px;
+	   }
+	 }
+}
+
+.sponsor-list__overview {
+  flex: 1;
+}
+.sponsor__name {
+  font-size: 24px;
+  line-height: 1.4;
+ 	a {
+		 	&:hover {
+      color: $yellow;
+      text-decoration: none;
+			}
+	 }
+	 @include mq {
+		  font-size: 20px;
+    margin-top: 14px;
+	 }
+}
+.sponsor__url {
+  font-size: 13px;
+  margin-top: 4px;
+  @include mq {
+		  font-size: 11px;
+	 }
+}
+.sponsor__description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 22px;
+  @include mq {
+		  font-size: 14px;
+    margin-top: 16px;
+	 }
+}
+.sponsor-list__sm {
+  display: flex;
+  flex-wrap: wrap;
+	 .sponsor {
+    width: 430px;
+    margin-right: 40px;
+			 &:nth-child(2n) {
+				  margin-right: 0;
+			 }
+    @include mq {
+			   width: 100%;
+      margin-right: 0;
+			 }
+ 	}
+  .sponsor__logo {
+		  width: 160px;
+    height: 160px;
+    margin-right: 20px;
+    @include mq {
+      width: 140px;
+      height: 140px;
+      margin: 0 auto;
+	   }
+	 }
+}
+.sponsor-list__xs {
+  display: flex;
+  flex-wrap: wrap;
+	 @include mq {
+	   flex-direction: column;
+ 	}
+	 .sponsor {
+    width: 430px;
+    margin-right: 40px;
+			 &:nth-child(2n) {
+				  margin-right: 0;
+			 }
+			 @include mq {
+			   width: 100%;
+      margin-right: 10%;
+			 }
+ 	}
+  .sponsor__logo {
+		  width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    @include mq {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+	   }
+	 }
+}

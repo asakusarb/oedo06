@@ -1,0 +1,21 @@
+.header
+  background-color: $sub-color
+
+.header__inner
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 3.5rem
+
+.header__logo-image
+  +size(auto 1.75rem)
+
+.header-nav__items
+  display: flex
+
+.header-nav__item
+  &:not(:first-child)
+    margin-left: 1.125rem
+
+.header-nav__item-link
+  +text-block(.875rem 1.6, $reversal-text)

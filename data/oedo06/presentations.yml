@@ -1,0 +1,135 @@
+---
+yukihiro_matz:
+  title: Ruby3 Typing
+  type: keynote
+  language: JA
+  description: |-
+    <p>Static typing is very popular among recent languages, e.g. TypeScript, Flow, Go, Swift, etc. Even Python has introduced type annotation.  How about Ruby?<br>
+    Can Ruby statically typed? Has dynamic typing become obsolete?</p>
+
+    <p>I will show you the answer. You will see the future of the type system in Ruby3.</p>
+  speakers:
+  - id: yukihiro_matz
+  video:
+    youtube_id: 2Ag8l-wq5qk
+m_seki:
+  title: dRuby in the last century.
+  type: presentation
+  language: JA
+  description: |-
+    <p>My first dRuby talk was in 2000, here in Kyoto. After the talk, I got many opportunities to write books and to talk on various topics including OSS, XP, and software testing. So, I'm glad to talk again here this year.<br>
+    Nowadays, concurrent processing has become more familiar with many people as one of their solutions. It's time for us to begin understanding dRuby.<br>
+    In this talk, I will introduce dRuby, sometimes called an OOPArt, to all generations of Rubyists.</p>
+
+
+    <p>私の最初のdRubyの講演は、2000年、この会場でした。<br>
+    この講演以降、本の出版や絶版、Rubyだけでなく様々なテーマ（OSSやXP、software testingなど）で講演する機会を得ました。<br>
+    2016年、再び同じ場所で話せることに喜んでいます。</p>
+
+    <p>並行処理は多くの人たちの解決策として身近に考えられるようになってきました。<br>
+    いまこそdRubyを理解する環境が整ってきたと思います。<br>
+    本講演では、再びdRubyを紹介します。</p>
+
+    <p>全ての世代のRubyistのみなさんに、20世紀のオーパーツと呼ばれている dRubyをお届けします。</p>
+  speakers:
+  - id: m_seki
+  materials:
+    - title: dRuby2016
+      url: https://speakerdeck.com/m_seki/druby2016
+  video:
+    youtube_id: Z7wTY3xZ7G0
+pitr_ch:
+  title: Who reordered my code?!
+  type: presentation
+  language: EN
+  description: |-
+    <p>There is a hidden problem waiting as Ruby becomes 3x faster and starts to support parallel computation - reordering by JIT compilers and CPUs.</p>
+
+    <p>In this talk, we’ll start by trying to optimize a few simple Ruby snippets. We’ll play the role of a JIT and a CPU and order operations as the rules of the system allow. Then we add a second thread to the snippets and watch it as it breaks horribly.</p>
+
+    <p>In the second part, we’ll fix the unwanted reorderings by introducing a memory model to Ruby. We’ll discuss in detail how it fixes the snippets and how it can be used to write faster code for parallel execution.</p>
+  speakers:
+  - id: pitr_ch
+  materials:
+    - title: 'Who reordered my code?!'
+      url: https://speakerdeck.com/pitr_ch/who-reordered-my-code
+  video:
+    youtube_id: 3FS1xnCEMq0
+
+ko1:
+  title: A proposal of new concurrency model for Ruby 3
+  type: presentation
+  language: EN
+  description: |-
+    <p>This presentation proposes a new concurrency model to support parallel execution for Ruby 3.<br>
+    Now, Ruby has "Thread" to support concurrency.<br>
+    However, making thread-safe programs is very hard because we need to manage all of the concurrent object mutations.<br>
+    To overcome such difficulty, we propose a new concurrency model that enables parallel execution.<br>
+    This presentation shows the following topics.</p>
+
+    <p>(1) Why is thread programming difficult?<br>
+    (2) New concurrent model proposal and why is this model easy?<br>
+    (3) Current design and implementation of this idea.</p>
+  speakers:
+  - id: ko1
+  materials:
+    - title: 'A proposal of new concurrency model for Ruby 3'
+      url: http://www.atdot.net/~ko1/activities/2016_rubykaigi.pdf
+  video:
+    youtube_id: WIrYh14H9kA
+nirvdrum:
+  title: A Tale of Two String Representations
+  type: presentation
+  language: EN
+  description: |-
+    <p>Strings are used pervasively in Ruby. If we can make them faster, we can make many apps faster.</p>
+
+    <p>In this talk, I will be introducing ropes: an immutable tree-based data structure for implementing strings. While an old idea, ropes provide a new way of looking at string performance and mutability in Ruby. I will describe how we replaced a byte array-oriented string representation with a rope-based one in JRuby+Truffle. Then we’ll look at how moving to ropes affects common string operations, its immediate performance impact, and how ropes can have cascading performance implications for apps.</p>
+  speakers:
+  - id: nirvdrum
+  materials:
+    - title: 'A Tale of Two String Representations'
+      url: https://speakerdeck.com/nirvdrum/a-tale-of-two-string-representations
+  video:
+    youtube_id: UQnxukip368
+tanaka_akr:
+  title: Unifying Fixnum and Bignum into Integer
+  type: presentation
+  language: JA
+  description: |-
+    <p>Ruby has three classes to represent integers: Fixnum, Bignum and Integer.
+    Integer is the abstract super class of Fixnum and Bignum.
+    Fixnum represents small integers that fit in a word.
+    Bignum can represent any integers until the memory is full.
+    The exact range of Fixnum varies depending on the machine architecture and Ruby implementation.
+    Since Fixnum and Bignum are implementation details,
+    applications which depend on the Fixnum range is not portable at least, and just wrong in most cases.
+    We'll unify Fixnum and Bignum into Integer for Ruby 2.4.
+    This makes Ruby programs a bit more portable.
+    Also, hiding the implementation detail makes Ruby easier for beginners to learn.</p>
+  speakers:
+  - id: tanaka_akr
+  materials:
+    - title: 'Unifying Fixnum and Bignum into Integer'
+      url: http://www.a-k-r.org/pub/2016-09-08-rubykaigi-unified-integer.pdf
+  video:
+    youtube_id: -k_ZhC5Lkgg
+
+duerst:
+  title: Ups and Downs of Ruby Internationalization
+  type: presentation
+  language: EN
+  description: "<p>Currently many of Ruby's String methods, such as upcase and downcase,
+    are limited to ASCII and ignore the rest of the world. This is finally going to
+    change in Ruby 2.4, where this functionality will be extended to cover full Unicode.
+    You will get to know what will change, how your programs may be affected, and
+    how these changes are implemented behind the scenes. We will also look at the
+    overall state of internationalization functionality in Ruby, and potential future
+    directions.</p>"
+  speakers:
+  - id: duerst
+  materials:
+    - title: 'Ups and Downs of Ruby Internationalization'
+      url: http://www.sw.it.aoyama.ac.jp/2016/pub/RubyKaigi/
+  video:
+    youtube_id: vfJp4mkf0EQ

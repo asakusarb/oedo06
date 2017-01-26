@@ -1,0 +1,14 @@
+.member-list.clearfix
+  .member-list__avatar=avatar_image_tag(member, class: 'member-list__avatar-image')
+  %h3.member-list__role= member.role
+  %p.member-list__name= member.name
+  .member-list__channels
+    %ul.channels-list
+      %li.channels-list-item
+        =link_to "https://github.com/#{member.github_id}", target: '_blank', class: 'channels-list__link-github' do
+          %i.fa.fa-github.channels-list__github-icon
+      %li.channels-list-item
+        =link_to "https://twitter.com/#{member.twitter_id}", target: '_blank', class: 'channels-list__link-twitter' do
+          %i.fa.fa-twitter.channels-list__twitter-icon
+    .channels-list__id= "@#{member.id}"
+		

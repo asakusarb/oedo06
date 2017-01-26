@@ -1,0 +1,26 @@
+.footer
+	width: 1000px
+	+margin(horizontal, auto)
+	padding-bottom: 2rem
+	text-align: center
+	@include mq
+	  width: 92%
+			margin-bottom: 20px
+
+.page-footer__license,
+.page-footer__design
+	font-size: 12px
+	line-height: 1.5
+
+.page-footer__license-link
+	color: $white
+	font-size: 12px
+	line-height: 1.5
+	&:hover
+		text-decoration: underline
+	.page-footer__design-link
+	color: $white
+	font-size: 12px
+	line-height: 1.5
+	&:hover
+		text-decoration: underline

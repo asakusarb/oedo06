@@ -1,0 +1,112 @@
+.main-visual
+  +padding(vertical, 4rem)
+  +media-breakpoint-down(sm)
+    +padding(vertical, 3rem)
+
+.main-visual__container
+  max-width: 46.5rem
+  +padding(horizontal, 1rem)
+  +margin(horizontal, auto)
+
+.main-visual__image-container
+  +padding(vertical, 5rem)
+  max-width: 44.5rem
+  +margin(horizontal, auto)
+  +media-breakpoint-down(md)
+    max-width: 36.5rem
+  +media-breakpoint-down(sm)
+    +padding(vertical, 0)
+    margin-bottom: 2rem
+
+.main-visual__image
+  width: 100%
+  display: block
+
+.main-visual__information
+  +text-block(1.375rem 1.8 3rem, center)
+  +media-breakpoint-down(md)
+    margin-bottom: 4rem
+  +media-breakpoint-down(sm)
+    +text-block(1rem 1.6 2rem, center)
+
+.main-visual__main-action-container
+  margin-bottom: 1.5rem
+  +media-breakpoint-down(sm)
+    margin-bottom: 1rem
+
+.main-visual__main-action
+  +text-block(1.5rem 1.5, center flex 800 #17528e)
+  height: 4.25rem
+  max-width: 24.5rem
+  align-items: center
+  justify-content: center
+  +margin(horizontal, auto)
+  +letter-spacing-center(.075em)
+  +position(relative)
+  border-radius: .375rem
+  transition: top .45s ease
+  +media-breakpoint-down(sm)
+    height: 3.75rem
+    font-size: 1.25rem
+  .main-visual__main-action-label
+    +position(relative, 1)
+    text-shadow: rgba(white, .2) 0 .0625rem .0625rem
+    transition: color .3s ease, text-shadow .4s ease
+  &::before,
+  &::after
+    transition: opacity .2s ease
+    content: ''
+    display: block
+    +position(absolute, left 0, top 0, right 0, bottom 0)
+    border-radius: .375rem
+  &::before
+    background-image: linear-gradient(to bottom, rgba(white, .4) 0%,rgba(white, .3) 100%)
+    box-shadow: rgba(white, .6) 0 .0625rem .125rem inset, rgba(white, .2) 0 0 .375rem inset, rgba(black, .2) 0 -.125rem .125rem inset, rgba(black, .3) 0 .125rem .1875rem
+  &::after
+    background-image: linear-gradient(to bottom, rgba(white, .5) 0%,rgba(white, .4) 100%)
+    box-shadow: rgba(white, .6) 0 .0625rem .125rem inset, rgba(white, .2) 0 0 .375rem inset, rgba(black, .2) 0 -.125rem .125rem inset, rgba(black, .3) 0 .125rem .1875rem
+    opacity: 0
+  &:hover
+    &::before
+      opacity: 0
+    &::after
+      opacity: 1
+    .main-visual__main-action-label
+      color: #063769
+      text-shadow: rgba(white, .8) 0 0 .5rem
+  &:active
+    &::before
+      opacity: 0
+    &::after
+      opacity: 1
+      box-shadow: rgba(white, .4) 0 .0625rem .125rem inset, rgba(white, .2) 0 0 .375rem inset, rgba(black, .1) 0 -.125rem 0 inset, rgba(black, .3) 0 0 .375rem
+  &.is-disabled
+    opacity: 1
+    pointer-events: none
+    box-shadow: none
+    margin-bottom: .5rem
+    .main-visual__main-action-label
+      opacity: 0
+    &::before,
+    &::after
+      box-shadow: none
+    .main-visual__main-action-message
+      +text-block(2.25rem 1.45, center 600 $default-text)
+      font-family: 'Dosis', sans-serif
+      +position(absolute, left 0, top 0, right 0, bottom 0, 2)
+      display: flex
+      justify-content: center
+      align-items: center
+      +media-breakpoint-down(sm)
+        font-size: 1.75rem
+
+
+.main-visual__main-action-message
+  display: none
+
+.main-visual__nav
+  display: flex
+  justify-content: center
+
+.main-visual__nav-link
+  +text-block(1rem 1.6, $default-text)

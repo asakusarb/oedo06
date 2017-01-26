@@ -1,0 +1,48 @@
+/*!
+ * Mojik v0.2.0 https://github.com/terkel/mojik
+ * @author Takeru Suzuki http://terkel.jp/
+ * @license MIT http://opensource.org/licenses/MIT
+ */
+.mjk-punctuationSpacer {
+    margin-right: -0.5em;
+}
+
+.mjk-leadOpeningBracket-atParagraphHead,
+.mjk-leadOpeningBracket-atLineHead {
+    margin-left: -0.5em;
+}
+
+.mjk-leadOpeningBracketBefore-atLineEnd::before {
+    content: "\A";
+    white-space: pre;
+}
+
+.mjk-western {
+    margin-left: 0.25ch;
+    margin-right: 0.25ch;
+}
+
+.mjk-western-number {
+    margin-left: 0.125ch;
+    margin-right: 0.125ch;
+}
+
+.mjk-western-atParagraphEnd,
+.mjk-western-noSpaceAfter {
+    margin-right: 0;
+}
+
+.mjk-western-atParagraphHead,
+.mjk-western-atLineHead,
+.mjk-western-noSpaceBefore {
+    margin-left: 0;
+}
+
+.mjk-western-atLineHead::before {
+    content: "\A";
+    white-space: pre;
+}
+
+.mjk-western-afterLineBreak::before {
+    content: normal;
+}

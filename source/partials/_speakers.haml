@@ -1,0 +1,15 @@
+%h1.page__frist-title
+  Speakers
+.page-wrapper
+  %section.speaker-container__content
+    %h2.page__sub-title Keynote Speakers
+    %ul.speaker__list
+      - data.oedo06.speakers.keynotes.each do |id, speaker|
+        %li.speaker__list-item
+          = partial 'partials/speaker', locals: { member: speaker }
+  %section.speaker-container__content
+    %h2.page__sub-title Speakers
+    %ul.speaker__list
+      - data.oedo06.speakers.speakers.each do |id, speaker|
+        %li.speaker__list-item
+          = partial 'partials/speaker', locals: { member: speaker }

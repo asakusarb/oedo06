@@ -1,0 +1,11 @@
+.sponsor{id: sponsor.id}
+  .sponsor__logo
+    =link_to image_tag("sponsors/#{sponsor.id}.png", class: 'avatar-image'), sponsor.url
+  .sponsor-list__overview
+    - if sponsor.role.present?
+      .sponsor__role= sponsor.role
+    %h3.sponsor__name= link_to sponsor.name, sponsor.url
+    .sponsor__url= link_to sponsor.url, sponsor.url
+    .sponsor__description
+      - if sponsor.description.present?
+        = simple_format(sponsor.description.html_safe)

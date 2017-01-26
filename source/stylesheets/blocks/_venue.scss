@@ -1,0 +1,94 @@
+.venue-container__content {
+	padding-top: 50px;
+	@include mq {
+		padding-top: 0;
+	}
+}
+
+.venue-container__place {
+	font-size: 24px;
+	line-height: 1.6;
+	text-align: center;
+	@include mq {
+		font-size: 20px;
+	}
+}
+
+.venue-container__image {
+	width: 100%;
+	height: auto;
+ margin-top: 10px;
+
+}
+
+.venue-container__image-text {
+	margin-top: 6px;
+	text-align: right;
+	@include mq {
+		margin-bottom: 20px;
+	}
+}
+
+.venue-container__address-info {
+	font-size: 16px;
+	line-height: 1.6;
+	margin-bottom: 50px;
+	@include mq {
+		font-size: 14px;
+		margin-bottom: 40px;
+	}
+}
+
+.venue-container__map {
+ color: $yellow;
+	margin-left: 1em;
+}
+
+.venue-container__access {
+	color: $yellow;
+}
+
+.venue-container__access-pdf,
+.venue-container__access-ticket {
+	color: $yellow;
+	margin-left: 1em;
+}
+
+.venue-container__hotel {
+	color: $yellow;
+}
+
+.venue-container__map-link,
+.venue-container__access-link,
+.venue-container__access-pdf-link,
+.venue-container__access-ticket-link,
+.venue-container__hotel-link {
+	color: $yellow;
+ text-decoration: underline;
+	&:hover {
+		color: $yellow;
+		text-decoration: none;
+	}
+}
+
+.venue-container__access-info {
+	font-size: 16px;
+	line-height: 1.8;
+	margin-bottom: 50px;
+	@include mq {
+		font-size: 14px;
+		line-height: 1.6;
+		margin-bottom: 40px;
+	}
+}
+
+.venue-container__hotel-info {
+ font-size: 16px;
+	line-height: 1.8;
+	margin-bottom: 40px;
+	@include mq {
+  font-size: 14px;
+		line-height: 1.6;
+		margin-bottom: 22px;
+	}
+}

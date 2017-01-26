@@ -1,0 +1,43 @@
+!!!
+%html
+  %head
+    %meta(charset='utf-8')
+    %title
+      - if current_page.data.title.present?
+        = current_page.data.title
+        = '- 大江戸Ruby会議06'
+      - elsif @title.present?
+        = @title
+        = '- 大江戸Ruby会議06'
+      - else
+        = '大江戸Ruby会議06'
+    %meta(name='viewport' content='width=device-width, initial-scale=1')
+    %meta(property='og:title' content='大江戸Ruby会議06 2017/3/20（月・祝）御茶ノ水')
+    %meta(property='og:site_name' content='大江戸Ruby会議06')
+    %meta(property='og:url' content='http://regional.rubykaigi.org/oedo06/')
+    %meta(property='og:type' content='activity')
+    %meta(property='og:image' content="http://regional.rubykaigi.org/oedo06/#{image_path('og_image.png')}")
+    %meta(name='twitter:site' content='@rubykaigi')
+    %meta(name='description' content='大江戸Ruby会議06 2017/3/20（月・祝）御茶ノ水ソラシティカンファレンスセンター')
+    %meta(name='keywords' content='oedo, rubykaigi, 大江戸ruby会議, asakusa.rb, 06, 2017')
+    %link{href: "/images/apple-touch-icon.png", rel: "apple-touch-icon", sizes: "180x180"}
+    %link{href: "/images/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}
+    %link{href: "/images/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}
+    %link{href: "/images/manifest.json", rel: "manifest"}
+    %link{color: "#5bbad5", href: "/images/safari-pinned-tab.svg", rel: "mask-icon"}
+    %meta{content: "#ffffff", name: "theme-color"}
+
+    /[if lt IE 9]
+      = javascript_include_tag 'http://html5shiv.googlecode.com/svn/trunk/html5.js'
+
+    = javascript_include_tag 'https://code.jquery.com/jquery-2.0.3.min.js'
+    = javascript_include_tag 'all'
+    = stylesheet_link_tag 'all', media: 'all'
+    = stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', media: 'all'
+    = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Dosis:800', media: 'all'
+    = favicon_tag 'favicon.png'
+
+  %body{ id: "#{@pageId}" }
+    -# = partial 'partials/header'
+    = yield
+    = partial('partials/footer')

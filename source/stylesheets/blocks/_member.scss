@@ -1,0 +1,135 @@
+.member-list {
+	width: 180px;
+	margin: 10px 0 0;
+	@include mq {
+		width: auto;
+	}
+}
+
+.member-list__item {
+	margin: 0 54px 60px 0;
+	&:nth-child(4n) {
+		margin: 0 0 60px 0;
+	}
+	@include mq {
+  width: 100%;
+		margin: 0 54px 30px 0;
+		&:nth-child(4n) {
+			margin: 0 0 30px 0;
+		}
+ }
+}
+
+.member-list__avatar {
+	width: 172px;
+	height: 172px;
+	border: 6px solid rgba($black, 0.2);
+	border-radius: 10px;
+ @include mq {
+  width: 120px;
+		height: 120px;
+		border: 4px solid rgba($black, 0.2);
+		float: left;
+		margin: 0 20px 0 0;
+ }
+}
+
+.member-list__avatar-image {
+	width: 100%;
+	height: auto;
+	background: $white;
+	border-radius: 6px;
+}
+
+.member-list__role {
+	font-size: 12px;
+	margin: 10px 0 0;
+	@include mq {
+  margin: 30px 0 0;
+ }
+}
+
+.member-list__name {
+	font-size: 18px;
+	margin: 10px 0 0;
+	@include mq {
+  font-size: 16px;
+ }
+}
+
+.member-list__channels {
+	display: flex;
+ flex-wrap: wrap;
+}
+
+.channels-list {
+	display: flex;
+}
+
+.channels-list-item {
+	margin: 8px 0 0;
+}
+
+.channels-list__github-icon,
+.channels-list__twitter-icon {
+ color: $white;
+	font-size: 20px;
+	margin: 0 6px 0 0;
+	&:hover{
+		color: $yellow;
+	}
+	@include mq {
+  font-size: 18px;
+ }
+}
+
+.channels-list__bio {
+	font-size: 12px;
+	line-height: 1.5;
+	margin: 10px 0 0;
+	font-family:"MetroNovaPro-Medium","ヒラギノ角ゴ Pro W6",HiraKakuPro-W6,sans-serif;
+	@include mq {
+		font-size: 10px;
+		margin: 6px 0 0;
+	}
+}
+
+.channels-list__id {
+	font-size: 12px;
+	margin: 12px 0 0;
+}
+
+.team-container__content,
+.speaker-container__content {
+	width: 900px;
+	padding: 50px 0 0;
+	@include mq {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+.team__list,
+.speaker__list {
+  display: flex;
+	 flex-wrap: wrap;
+  @include mq {
+    display: block;
+	}
+}
+.team__list-item,
+.speaker__list-item {
+
+	margin: 0 54px 50px 0;
+	&:nth-child(4n) {
+		margin: 0 0 50px 0;
+	}
+	@include mq {
+  width: 100%;
+		margin: 0 54px 30px 0;
+		float: none;
+		&:nth-child(4n) {
+			margin: 0 0 30px 0;
+		}
+ }
+}

@@ -1,0 +1,17 @@
+= link_to "presentations/#{talk_id}" do
+  - first_speaker = talk_a.speakers[0]
+  - first_speaker = data.oedo06.speakers.speakers[first_speaker.id]
+  .schedule-table__avatar= image_tag(first_speaker.avatar_url)
+  .schedule-table__title-meta
+    %span.schedule-table__language= talk_a.language
+    - if talk_a.keynote == true
+      %span.schedule-table__keynote Keynote
+    .schedule-table__title= talk_a.title
+    .schedule-table__speakers
+      - talk_a.speakers.each do |speaker|
+        - speaker_data = data.oedo06.speakers.speakers[speaker.id]
+        .schedule-table__speaker
+          %span.schedule-table__name= speaker_data['name']
+          %span.schedule-table__id= "@#{speaker_data['id']}"
+  %span.schedule-table__name= talk_a.speaker
+  %span.schedule-table__name

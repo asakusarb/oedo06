@@ -1,0 +1,11 @@
+%h1.page__frist-title
+  Team
+.page-wrapper
+  %section.team-container__content
+    - data.oedo06.team.each_pair do |division_name, members|
+      %h2.page__sub-title{id: division_name}
+        = division_name == 'mc' ? 'MC' : division_name.titleize
+      %ul.team__list.clearfix
+        - members.each do |member|
+          %li.team__list-item
+            = partial 'partials/member', locals: { member: member }
