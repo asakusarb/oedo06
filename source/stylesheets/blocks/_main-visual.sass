@@ -81,28 +81,24 @@
       opacity: 1
       box-shadow: rgba(white, .4) 0 .0625rem .125rem inset, rgba(white, .2) 0 0 .375rem inset, rgba(black, .1) 0 -.125rem 0 inset, rgba(black, .3) 0 0 .375rem
   &.is-disabled
-    opacity: 1
+    opacity: .5
     pointer-events: none
     box-shadow: none
     margin-bottom: .5rem
-    .main-visual__main-action-label
-      opacity: 0
     &::before,
     &::after
       box-shadow: none
-    .main-visual__main-action-message
-      +text-block(2.25rem 1.45, center 600 $default-text)
-      font-family: 'Dosis', sans-serif
-      +position(absolute, left 0, top 0, right 0, bottom 0, 2)
-      display: flex
-      justify-content: center
-      align-items: center
-      +media-breakpoint-down(sm)
-        font-size: 1.75rem
-
 
 .main-visual__main-action-message
-  display: none
+  +text-block(2rem 1.45, center 600 rgba($default-text, .7))
+  font-family: 'Dosis', sans-serif
+  display: flex
+  justify-content: center
+  transform: rotate(-20deg)
+  +position(relative, top -4rem)
+  +media-breakpoint-down(sm)
+    font-size: 1.75rem
+    +position(top -3.75rem)
 
 .main-visual__nav
   display: flex
