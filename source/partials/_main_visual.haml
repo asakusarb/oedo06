@@ -11,7 +11,7 @@
         = data.oedo06.information.venue.prefecture
         = data.oedo06.information.venue.city
         %br
-        = data.oedo06.information.venue.name
+        = link_to data.oedo06.information.venue.name, 'http://solacity.jp/cc/index.html', class: 'main-visual__information-link', target: '_blank'
     .main-visual__main-action-container
       .main-visual__main-action.is-disabled
         %span.main-visual__main-action-label
