@@ -1,5 +1,9 @@
-%h1.page__frist-title
-  Schedule
-.page-wrapper
-  %section.schedule-container__content
-    = partial 'partials/schedule_table', locals: { day: 'sep08' }
+%section.section#time-table
+  .container
+    .section__inner
+      %header.section__header
+        %h1.section__primary-headding
+          タイムテーブル
+      .section__body
+        %section.schedule-container__content
+          = partial 'partials/schedule_table'

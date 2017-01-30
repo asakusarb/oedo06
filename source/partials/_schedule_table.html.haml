@@ -1,16 +1,13 @@
-%table.table.schedule-table
-  - data.oedo06.schedule[day].events.each do |event|
-    %tr{ class: "#{'schedule-table__break' if event.type == 'break'}" }
-      %th.schedule-table__time
+.schedule-table
+  - data.oedo06.schedule.events.each do |event|
+    .schedule-table__item{ class: "#{'is-break' if event.type == 'break'}" }
+      .schedule-table__time
         = event.begin
         = '-'
         = event.end
-      - if event.type == 'break'
-        %td.schedule-table__td-break{ colspan: 2 }
-          - unless ['Keynote', 'Lunch Break', 'Afternoon Break', 'Closing', 'Door Open', 'Opening'].include?(event.name)
-            %span.schedule-table__break-hall-name main_hall
-          %span.schedule-table__break-name= event.name
-      - else
-        %td.schedule-table__main_hall.schedule-table__td
-          - if event.talks.main_hall.present?
-            = partial 'partials/presentation', locals: { event: event, hall: 'main_hall' }
+      .schedule-table__td
+        .schedule-table__content
+          .schedule-table__name
+            = event.name
+          - if event.talks.present?
+            = partial 'partials/presentation', locals: { event: event }

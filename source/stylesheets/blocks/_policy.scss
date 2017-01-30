@@ -1,26 +1,15 @@
 .policy-container__content {
 	padding-top: 50px;
-	@include mq {
-		padding-top: 0;
-	}
 }
 
 .policy-container__content-sentence {
 	font-size: 14px;
 	line-height: 1.6;
 	margin-bottom: 36px;
-	@include mq {
-		font-size: 14px;
-		margin-bottom: 20px;
-	}
 }
 
 .policy-container__content-sentence-jp {
 	margin-bottom: 36px;
-	@include mq {
-		margin-top: 44px;
-		margin-bottom: 48px;
-	}
 }
 
 .policy-container__content-list {

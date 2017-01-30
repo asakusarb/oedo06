@@ -1,21 +1,54 @@
 .header
   background-color: $sub-color
+  +media-breakpoint-down(sm)
+    +position(fixed, left 0, bottom 0, right 0, 1)
+    height: 2.75rem
+    .container
+      +margin(horizontal, 0)
+      +padding(horizontal, 0)
+      height: 100%
 
 .header__inner
   display: flex
   justify-content: space-between
   align-items: center
   height: 3.5rem
+  +media-breakpoint-down(sm)
+    height: 100%
 
 .header__logo-image
-  +size(auto 1.75rem)
+  +size(auto 2.25rem)
+
+.header-nav
+  +media-breakpoint-down(sm)
+    +size(100%)
 
 .header-nav__items
   display: flex
+  align-items: center
+  +media-breakpoint-down(sm)
+    height: 100%
 
 .header-nav__item
   &:not(:first-child)
     margin-left: 1.125rem
+  +media-breakpoint-down(sm)
+    height: 100%
+    width: 25%
+    &:not(:first-child)
+      margin-left: 0
+    &:not(:last-child)
+      border-right: solid .0625rem rgba(black, .1)
+
 
 .header-nav__item-link
   +text-block(.875rem 1.6, $reversal-text)
+  &.is-icon
+    font-size: 1.5rem
+  +media-breakpoint-down(sm)
+    display: flex
+    height: 100%
+    align-items: center
+    justify-content: center
+    +media-breakpoint-down(sm)
+      +text-block(.75rem 1.4, center)
