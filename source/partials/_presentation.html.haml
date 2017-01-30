@@ -1,27 +1,17 @@
-- presentation_id = event.talks[hall]
+- presentation_id = event.talks
 - presentation = data.oedo06.presentations[presentation_id]
-- if presentation.type == 'discussion'
-  .schedule-table__avatar= image_tag('/images/top_img2.png')
-- elsif presentation.type == 'lt'
-  .schedule-table__avatar= image_tag('/images/top_img2.png')
-- else
-  - first_speaker = presentation.speakers[0]
-  - first_speaker = data.oedo06.speakers.keynotes[first_speaker.id] || data.oedo06.speakers.speakers[first_speaker.id]
-  - if first_speaker
-    .schedule-table__avatar= image_tag(first_speaker.avatar_url)
-.schedule-table__title-meta
-  %span.schedule-table__language= presentation.language
-  - if presentation.type == 'keynote'
-    %span.schedule-table__keynote Keynote
-.schedule-table__title= presentation.title
-.schedule-table__speakers
-  .schedule-table__speaker
-    - if ['discussion', 'lt'].include?(presentation.type)
-      %span.schedule-table__name= presentation.speaker
-    - else
-      %ul.schedule-table__speakers-list
-        - presentation.speakers.each do |speaker|
-          - speaker = data.oedo06.speakers.keynotes[speaker.id] || data.oedo06.speakers.speakers[speaker.id]
-          %li
-            %span.schedule-table__name= speaker['name']
-            %span.schedule-table__id= "@#{speaker['id']}"
+
+%ul.schedule-table__speakers
+  - presentation.speakers.each do |speaker|
+    - speaker = data.oedo06.speakers.keynotes[speaker.id] || data.oedo06.speakers.invited[speaker.id] || data.oedo06.speakers.ninja_talks[speaker.id]
+    %li.schedule-table-speaker
+      .schedule-table-speaker__avatar
+        = image_tag(speaker.avatar_url)
+      .schedule-table-speaker__data
+        .schedule-table-speaker__presentation-title
+          = speaker.presentation_title
+        .schedule-table-speaker__names
+          %span.schedule-table-speaker__name
+            = speaker['name']
+          %span.schedule-table-speaker__id
+            = "@#{speaker['id']}"

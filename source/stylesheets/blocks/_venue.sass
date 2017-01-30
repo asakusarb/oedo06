@@ -1,0 +1,35 @@
+.venue__access-item
+  +text-block(.875rem 1.5 .5rem)
+  +media-breakpoint-down(sm)
+    font-size: .8125rem
+  &:last-child
+    margin-bottom: 0
+
+.venue-address
+  +media-breakpoint-down(sm)
+    margin-bottom: 1rem
+
+.venue__name
+  margin-bottom: .5rem
+  +media-breakpoint-down(sm)
+    text-align: center
+
+.venue__address
+  +text-block(.875rem 1.5 .25rem)
+  font-style: normal
+
+.venue__access-title
+  margin-bottom: .5rem
+
+.venue__map-link
+  color: $link-color
+  +hover-link
+  +media-breakpoint-down(sm)
+    display: flex
+    border: solid .0625rem $link-color
+    align-items: center
+    justify-content: center
+    height: 2.5rem
+    margin-top: .75rem
+    i
+      margin-right: .5rem
