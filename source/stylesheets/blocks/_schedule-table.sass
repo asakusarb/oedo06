@@ -21,7 +21,8 @@
   align-items: center
   justify-content: center
   width: 10rem
-  +text-block(1rem 1.5)
+  +text-block(1rem 1.5, 600)
+  font-family: 'Roboto Mono', monospace
   +media-breakpoint-down(sm)
     width: 100%
     background-color: rgba(black, .2)
@@ -36,10 +37,10 @@
 
 .schedule-table__name
   width: 12.5rem
-  display: flex
+  +text-block(1rem 1.5, flex center 600)
   align-items: center
   justify-content: center
-  text-align: center
+  font-family: 'Signika', sans-serif
   +media-breakpoint-down(sm)
     +padding(vertical, .375rem)
     width: 100%
@@ -65,3 +66,7 @@
   margin-right: .75rem
   border-radius: .1875rem
   overflow: hidden
+
+.schedule-table-speaker__presentation-title
+  +text-block(1rem 1.5, flex center 600)
+  font-family: 'Signika', sans-serif
