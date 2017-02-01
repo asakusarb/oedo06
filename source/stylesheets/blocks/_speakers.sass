@@ -52,7 +52,8 @@
     justify-content: center
 
 .speaker__name
-  +text-block(1.125rem 1.5, center)
+  +text-block(1.125rem 1.5, center 600)
+  font-family: 'Signika', sans-serif
   +media-breakpoint-down(sm)
     +text-block(1rem, left)
 
@@ -64,6 +65,7 @@
     justify-content: flex-start
 
 .speaker-channels__item
+  color: $muted-text
   &:not(:last-child)
     margin-right: .5rem
   +media-breakpoint-down(sm)
@@ -72,7 +74,7 @@
 
 .speaker-channels__item-link
   font-size: 1.25rem
-  color: $default-text
+  color: $muted-text
   transition: color .2s ease-in
   &:hover
     color: $link-color
