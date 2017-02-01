@@ -1,0 +1,41 @@
+.past-kaigis
+  display: flex
+  justify-content: center
+  align-items: center
+  +media-breakpoint-down(sm)
+    flex-direction: column
+
+.past-kaigis__title
+  +text-block(1rem 1, 600)
+  border-right: solid .0625rem $default-text
+  padding-right: .75rem
+  +media-breakpoint-down(sm)
+    border-right: none
+    padding-right: 0
+    margin-bottom: .5rem
+
+.past-kaigis__items
+  display: flex
+  justify-content: center
+  align-items: center
+  +media-breakpoint-down(sm)
+    flex-wrap: wrap
+
+.past-kaigis__item
+  margin-left: .75rem
+  +text-block(1rem 1, 400)
+  +media-breakpoint-down(sm)
+    font-size: .875rem
+    margin-left: 0
+
+.past-kaigis__item-link
+  color: $muted-text
+  +media-breakpoint-down(sm)
+    padding: .375rem .5rem
+
+a.past-kaigis__item-link
+  color: $default-text
+  +hover-link
+  transition: color .2s ease-in
+  &:hover
+    color: $link-color

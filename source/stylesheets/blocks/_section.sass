@@ -1,0 +1,42 @@
+.section
+  margin-bottom: 3rem
+  +media-breakpoint-down(sm)
+    margin-bottom: 1.5rem
+
+.section__inner
+  max-width: 60rem
+  +margin(horizontal, auto)
+  background-color: rgba(black, .12)
+  +media-breakpoint-down(sm)
+    background-color: rgba(black, .27)
+
+.section__header
+  padding: .625rem 1.75rem
+  border-bottom: solid .0625rem rgba(black, .06)
+  box-shadow: rgba(white, 0.08) 0 .0625rem 0
+  +media-breakpoint-down(sm)
+    padding: .5rem 1rem
+
+.section__primary-headding
+  +text-block(1.75rem 1.5, 800 .1em)
+  +media-breakpoint-down(sm)
+    +text-block(1.25rem, 600)
+
+.section__secondary-headding
+  +text-block(1.125rem 1.5, 800 .01em)
+  +media-breakpoint-down(sm)
+    +text-block(1rem, 0em 600)
+
+.section__primary-label
+  +text-block(1rem 1.5, 800 .01em)
+  +media-breakpoint-down(sm)
+    +text-block(.875rem, 600 0em)
+
+.section__body
+  padding: 1rem 1.75rem
+  +media-breakpoint-down(sm)
+    padding: .5rem 1rem
+
+.section__content
+  &:not(:last-child)
+    margin-bottom: 1.25rem

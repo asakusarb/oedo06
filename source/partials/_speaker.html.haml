@@ -1,24 +1,17 @@
-.member-list.clearfix
-  .member-list__avatar=image_tag(member.avatar_url, alt: member.name, class: 'member-list__avatar-image')
-  .member-content
-    .member-list__name= member.name
-    - if member.company.present?
-      .company= member.company
-    - if member.job_title.present?
-      .job-title= member.job_title
-    - if member.location.present?
-      .location
-        %i.fa.fa-map-marker
-        = member.location
-    .member-list__channels
-      %ul.channels-list
-        - if member.github_id.present?
-          %li.channels-list-item
-            =link_to "https://github.com/#{member.github_id}", target: '_blank', class: 'channels-list__link-github' do
-              %i.fa.fa-github.channels-list__github-icon
-        - if member.twitter_id.present?
-          %li.channels-list-item
-            =link_to "https://twitter.com/#{member.twitter_id}", target: '_blank', class: 'channels-list__link-twitter' do
-              %i.fa.fa-twitter.channels-list__twitter-icon
-      .channels-list__id= "@#{member.id}"
-    .channels-list__bio= member.bio
+.speaker
+  .speaker__avatar
+    = image_tag(speaker.avatar_url, alt: speaker.name, class: 'speaker__avatar-image')
+  .speaker__text-data
+    .speaker__name
+      = speaker.name
+    %ul.speaker-channels
+      - if speaker.github_id.present?
+        %li.speaker-channels__item
+          = link_to "https://github.com/#{speaker.github_id}", target: '_blank', class: 'speaker-channels__item-link' do
+            %i.fa.fa-github-alt
+      - if speaker.twitter_id.present?
+        %li.speaker-channels__item
+          = link_to "https://twitter.com/#{speaker.twitter_id}", target: '_blank', class: 'speaker-channels__item-link' do
+            %i.fa.fa-twitter
+      %li.speaker-channels__item
+        @#{speaker.id}

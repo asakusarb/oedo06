@@ -1,30 +1,37 @@
-%h1.page__frist-title
-  Venue
-.page-wrapper
-  .venue-container__content
-    %h2.venue-container__place at Kyoto International Conference Center, Kyoto, Japan
-    =image_tag('place_image.jpg', class: 'venue-container__image')
-    %p.venue-container__image-text.jp 画像提供：国立京都国際会館
-  .venue-container__content
-    %h3.page__sub-title Address
-    %p.venue-container__address-info
-      Takaragaike, Sakyo-ku, Kyoto 606-0001 Japan
-      %span.venue-container__map›
-      = link_to 'View in Google Map', 'https://goo.gl/maps/VXBqKDRHJBm', class: 'venue-container__map-link'
-  .venue-container__content
-    %h3.page__sub-title Access
-    %p.venue-container__access-info
-      About 75 minutes by
-      = link_to 'Airport Shuttle Train “Haruka” from Kansai International Airport to Kyoto Station.', 'https://www.westjr.co.jp/global/en/travel/shopping/access/train.html', class: 'venue-container__access-link'
-      %br
-      About 55 minutes by
-      = link_to 'Limousine bus from Osaka (Itami) Airport to Kyoto Station.', 'http://www.okkbus.co.jp/en/index.html', class: 'venue-container__access-link'
-      %br
-      2 hours 15 minutes by Shinkansen (Bullet Train) from Tokyo Station to Kyoto Station.
-      %br
-      %span.venue-container__access›
-      = link_to 'Access | ICC Kyoto', 'http://www.icckyoto.or.jp/en/access/index.html', class: 'venue-container__access-link'
-      %span.venue-container__access-pdf›
-      = link_to 'pdf', 'http://www.icckyoto.or.jp/en/access/download/access_english.pdf', class: 'venue-container__access-pdf-link'
-      %span.venue-container__access-ticket›
-      = link_to 'Ticket Deals and Passes', 'https://www.westjr.co.jp/global/en/ticket/icoca-haruka/', class: 'venue-container__access-ticket-link'
+%section.section#venue
+  .container
+    .section__inner
+      %header.section__header
+        %h1.section__primary-headding
+          会場
+      .section__body
+        .row
+          .col-md-6
+            .section__content.venue-address
+              %h2.venue__name.section__secondary-headding
+                ソラシティカンファレンスセンター
+              %address.venue__address
+                東京都千代田区神田駿河台 4-6
+                %br.is-hidden-md-up
+                御茶ノ水ソラシティ
+              .venue__map
+                = link_to 'https://goo.gl/xXVXIv', class: 'venue__map-link', target: '_blank' do
+                  %i.fa.fa-map-marker
+                  Google Map
+          .col-md-6
+            .venue__access.section__content
+              %h3.section__primary-label.venue__access-title
+                アクセス
+              %ul.venue__access-items
+                %li.venue__access-item
+                  JR 中央線・総武線「御茶ノ水」駅
+                  聖橋口から徒歩 1 分
+                %li.venue__access-item
+                  東京メトロ千代田線「新御茶ノ水」駅
+                  B2出口 直結
+                %li.venue__access-item
+                  東京メトロ丸ノ内線「御茶ノ水」駅
+                  出口1から徒歩 4 分
+                %li.venue__access-item
+                  都営地下鉄 新宿線「小川町」駅
+                  B3出口から徒歩 6 分

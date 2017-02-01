@@ -1,11 +1,25 @@
 .footer
-	width: 1000px
 	+margin(horizontal, auto)
-	padding-bottom: 2rem
+	margin-top: 10rem
+	+padding(vertical, 3rem)
 	text-align: center
-	@include mq
-	  width: 92%
-			margin-bottom: 20px
+	background-color: #16508a
+	position: relative
+	&::before
+		content: ''
+		+size(100% 7rem)
+		background-image: image_url('city.svg')
+		background-size: auto 7rem
+		background-repeat: repeat-x
+		+position(absolute, left 0, top -6.9rem)
+	&::after
+		content: ''
+		+size(100% 5.5rem)
+		background-image: image_url('kaminari.svg')
+		background-size: auto 5.5rem
+		background-repeat: no-repeat
+		background-position: center
+		+position(absolute, left 0, top -4rem)
 
 .page-footer__license,
 .page-footer__design

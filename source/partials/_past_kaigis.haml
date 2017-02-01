@@ -1,5 +1,10 @@
-.past-kaigis.clearfix
+%section.past-kaigis
   %h2.past-kaigis__title Past Kaigis
-  %ol.past-kaigis__list
+  %ol.past-kaigis__items
     - data.oedo06.past_kaigis.kaigis.each do |kaigi|
-      = link_to kaigi.title, kaigi.url, class: 'past-kaigis__list-link'
+      %li.past-kaigis__item
+        - if kaigi.url.present?
+          = link_to kaigi.title, kaigi.url, class: 'past-kaigis__item-link'
+        - else
+          .past-kaigis__item-link
+            = kaigi.title
