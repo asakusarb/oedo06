@@ -13,16 +13,6 @@
         %br
         = link_to data.oedo06.information.venue.name, 'http://solacity.jp/cc/index.html', class: 'main-visual__information-link', target: '_blank'
     .main-visual__main-action-container
-      .main-visual__main-action.is-disabled
+      = link_to data.oedo06.information.ticket_url, class: 'main-visual__main-action', target: '_blank' do
         %span.main-visual__main-action-label
           参加登録
-      .main-visual__main-action-message
-        Coming Soon!!
-      -#
-        = link_to data.oedo06.information.ticket_url, class: 'main-visual__main-action' do
-          %span.main-visual__main-action-label
-            参加登録
-
-    -#
-      %nav.main-visual__nav
-        = link_to 'Anti Harassment Policy', '/code-of-conduct/', class: 'main-visual__nav-link'
