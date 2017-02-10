@@ -10,7 +10,7 @@
     <meta content='大江戸Ruby会議06' property='og:site_name'>
     <meta content='http://regional.rubykaigi.org/oedo06/' property='og:url'>
     <meta content='activity' property='og:type'>
-    <meta content='http://regional.rubykaigi.org/oedo06/images/og_image.png' property='og:image'>
+    <meta content='https://asakusarb.github.io/oedo06/images/og_image.png' property='og:image'>
     <meta content='@OedoRubyKaigi' name='twitter:site'>
     <meta content='大江戸Ruby会議06 2017/3/20（月・祝）御茶ノ水ソラシティカンファレンスセンター' name='description'>
     <meta content='oedo, rubykaigi, 大江戸ruby会議, asakusa.rb, 06, 2017' name='keywords'>
@@ -27,10 +27,42 @@
     <script src="javascripts/all.js"></script>
     <link href="stylesheets/all.css" rel="stylesheet" media="all" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all" />
-    <link href="https://fonts.googleapis.com/css?family=Dosis:800" rel="stylesheet" media="all" />
+    <link href="//fonts.googleapis.com/css?family=Dosis:800" rel="stylesheet" media="all" />
+    <link href="//fonts.googleapis.com/css?family=Roboto+Mono|Signika" rel="stylesheet" media="all" />
     <link href="images/favicon.png" rel="icon" type="image/png" />
   </head>
   <body id='home'>
+    <header class='header' id='header'>
+      <div class='container'>
+        <div class='header__inner'>
+          <h1 class='header__logo is-hidden-sm-down'>
+            <a href="/" class="header__logo-link"><img src="images/header-logo.svg" class="header__logo-image" alt="Header logo" />
+            </a>
+          </h1>
+          <nav class='header-nav'>
+            <ul class='header-nav__items'>
+              <li class='header-nav__item'>
+                <a href="#speakers" class="header-nav__item-link" data-scroll="">スピーカー
+                </a>
+              </li>
+              <li class='header-nav__item'>
+                <div class='header-nav__item-link is-unable'>
+                  タイム<br class='is-hidden-md-up'>テーブル
+                </div>
+              </li>
+              <li class='header-nav__item'>
+                <a href="#venue" class="header-nav__item-link" data-scroll="">会場
+                </a>
+              </li>
+              <li class='header-nav__item'>
+                <a href="https://twitter.com/oedorubykaigi" target="_blank" class="header-nav__item-link is-icon"><i class='fa fa-twitter'></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
     <div class='main-visual'>
       <div class='main-visual__container'>
         <div class='main-visual__image-container'>
@@ -56,14 +88,147 @@
         </div>
       </div>
     </div>
+    <section class='section' id='speakers'>
+      <div class='container'>
+        <div class='section__inner'>
+          <header class='section__header'>
+            <h1 class='section__primary-headding'>
+              発表者
+            </h1>
+          </header>
+          <div class='section__body'>
+            <section class='speakers'>
+              <div class='row'>
+                <div class='col-md-4 col-xs-12'>
+                  <h2 class='speakers__title is-keynote'>
+                    Keynote
+                  </h2>
+                  <div class='speaker'>
+                    <div class='speaker__avatar'>
+                      <img src="https://img.sorah.jp/icon2017.rect-a.480.png" alt="Sorah Fukumori" class="speaker__avatar-image" />
+                    </div>
+                    <div class='speaker__text-data'>
+                      <div class='speaker__name'>
+                        Sorah Fukumori
+                      </div>
+                      <ul class='speaker-channels'>
+                        <li class='speaker-channels__item'>
+                          <a href="https://github.com/sorah" target="_blank" class="speaker-channels__item-link"><i class='fa fa-github-alt'></i>
+                          </a>
+                        </li>
+                        <li class='speaker-channels__item'>
+                          <a href="https://twitter.com/sora_h" target="_blank" class="speaker-channels__item-link"><i class='fa fa-twitter'></i>
+                          </a>
+                        </li>
+                        <li class='speaker-channels__item'>
+                          @sorah
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='section' id='venue'>
+      <div class='container'>
+        <div class='section__inner'>
+          <header class='section__header'>
+            <h1 class='section__primary-headding'>
+              会場
+            </h1>
+          </header>
+          <div class='section__body'>
+            <div class='row'>
+              <div class='col-md-6'>
+                <div class='section__content venue-address'>
+                  <h2 class='venue__name section__secondary-headding'>
+                    ソラシティカンファレンスセンター
+                  </h2>
+                  <address class='venue__address'>
+                    東京都千代田区神田駿河台 4-6
+                    <br class='is-hidden-md-up'>
+                    御茶ノ水ソラシティ
+                  </address>
+                  <div class='venue__map'>
+                    <a href="https://goo.gl/xXVXIv" class="venue__map-link" target="_blank"><i class='fa fa-map-marker'></i>
+                    Google Map
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class='col-md-6'>
+                <div class='venue__access section__content'>
+                  <h3 class='section__primary-label venue__access-title'>
+                    アクセス
+                  </h3>
+                  <ul class='venue__access-items'>
+                    <li class='venue__access-item'>
+                      JR 中央線・総武線「御茶ノ水」駅
+                      聖橋口から徒歩 1 分
+                    </li>
+                    <li class='venue__access-item'>
+                      東京メトロ千代田線「新御茶ノ水」駅
+                      B2出口 直結
+                    </li>
+                    <li class='venue__access-item'>
+                      東京メトロ丸ノ内線「御茶ノ水」駅
+                      出口1から徒歩 4 分
+                    </li>
+                    <li class='venue__access-item'>
+                      都営地下鉄 新宿線「小川町」駅
+                      B3出口から徒歩 6 分
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='past-kaigis'>
+      <h2 class='past-kaigis__title'>Past Kaigis</h2>
+      <ol class='past-kaigis__items'>
+        <li class='past-kaigis__item'>
+          <a href="http://regional.rubykaigi.org/oedo01/" class="past-kaigis__item-link">odeo01</a>
+        </li>
+        <li class='past-kaigis__item'>
+          <div class='past-kaigis__item-link'>
+            odeo02
+          </div>
+        </li>
+        <li class='past-kaigis__item'>
+          <a href="http://regional.rubykaigi.org/oedo03/" class="past-kaigis__item-link">odeo03</a>
+        </li>
+        <li class='past-kaigis__item'>
+          <a href="http://regional.rubykaigi.org/oedo04/" class="past-kaigis__item-link">odeo04</a>
+        </li>
+        <li class='past-kaigis__item'>
+          <a href="http://regional.rubykaigi.org/oedo05/" class="past-kaigis__item-link">odeo05</a>
+        </li>
+      </ol>
+    </section>
     <footer class='footer' id='footer'>
-      <p class='page-footer__license'>
-        <span>This work by OedoRubyKaigi 06 Team is licensed under a</span>
-        <a href="http://creativecommons.org/licenses/by/3.0/" class="page-footer__license-link" target="_blank">Creative Commons Attribution 3.0 Unported License.</a>
-      </p>
+      <div class='container'>
+        <small class='page-footer__license'>
+          <span>This work by OedoRubyKaigi 06 Team is licensed under a</span>
+          <a href="http://creativecommons.org/licenses/by/3.0/" class="page-footer__license-link" target="_blank">Creative Commons Attribution 3.0 Unported License.</a>
+        </small>
+      </div>
     </footer>
     <script>
       Mojik.compose(".js-mojik");
+      smoothScroll.init();
     </script>
+    <div class='to-header js-to-header'>
+      <div class='to-header__container'>
+        <a href="#header" class="to-header__link" data-scroll=""><i class='fa fa-angle-up'></i>
+        </a>
+      </div>
+    </div>
   </body>
 </html>

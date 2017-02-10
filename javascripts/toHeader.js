@@ -1,0 +1,1 @@
+(function(){$(function(){var o,i;return i=$(".js-to-header"),o=function(){return $(window).scrollTop()>100?i.addClass("is-active"):i.removeClass("is-active")},$(window).scroll(o),$("body").bind("touchmove",o)})}).call(this);
