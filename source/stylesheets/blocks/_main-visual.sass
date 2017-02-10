@@ -1,10 +1,9 @@
 .main-visual__container
   max-width: 46.5rem
   +padding(horizontal, 1rem)
-  +margin(horizontal, auto)
-  margin-top: 1rem
+  margin: 1rem auto 3rem
   +media-breakpoint-down(sm)
-    margin-top: 0
+    +margin(vertical, 0 1.5rem)
 
 .main-visual__image-container
   +padding(vertical, 3rem)
@@ -25,7 +24,7 @@
   +media-breakpoint-down(md)
     margin-bottom: 4rem
   +media-breakpoint-down(sm)
-    +text-block(.875rem 1.6 2rem, center)
+    +text-block(.875rem 1.6 1rem, center)
 
 .main-visual__information-link
   +hover-link-reversal
@@ -44,8 +43,8 @@
   border-radius: .375rem
   transition: top .45s ease
   +media-breakpoint-down(sm)
-    height: 3.75rem
-    font-size: 1.25rem
+    height: 3rem
+    font-size: 1.125rem
   .main-visual__main-action-label
     +position(relative, 1)
     text-shadow: rgba(white, .2) 0 .0625rem .0625rem

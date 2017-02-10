@@ -18,37 +18,3 @@
 
 .header__logo-image
   +size(auto 2.25rem)
-
-.header-nav
-  +media-breakpoint-down(sm)
-    +size(100%)
-
-.header-nav__items
-  display: flex
-  align-items: center
-  +media-breakpoint-down(sm)
-    height: 100%
-
-.header-nav__item
-  &:not(:first-child)
-    margin-left: 1.125rem
-  +media-breakpoint-down(sm)
-    height: 100%
-    width: 25%
-    &:not(:first-child)
-      margin-left: 0
-    &:not(:last-child)
-      border-right: solid .0625rem rgba(black, .1)
-
-
-.header-nav__item-link
-  +text-block(.875rem 1.6, $reversal-text)
-  &.is-icon
-    font-size: 1.5rem
-  +media-breakpoint-down(sm)
-    display: flex
-    height: 100%
-    align-items: center
-    justify-content: center
-    +media-breakpoint-down(sm)
-      +text-block(.75rem 1.4, center)

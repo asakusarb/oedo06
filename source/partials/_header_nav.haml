@@ -1,0 +1,23 @@
+%nav.header-nav
+  %ul.header-nav__items
+    %li.header-nav__item
+      = link_to '#speakers', class: 'header-nav__item-link', data: {scroll: ''} do
+        スピーカー
+    %li.header-nav__item
+      = link_to '#time-table', class: 'header-nav__item-link', data: {scroll: ''} do
+        タイム<br class='is-hidden-md-up'>テーブル
+    %li.header-nav__item
+      = link_to '#venue', class: 'header-nav__item-link', data: {scroll: ''} do
+        会場
+    -#
+      %li.header-nav__item
+        = link_to '懇親会', '/parties/', class: 'header-nav__item-link', data: {scroll: ''}
+    -#
+      %li.header-nav__item
+        = link_to 'スポンサー', '/sponsors/', class: 'header-nav__item-link', data: {scroll: ''}
+    -#
+      %li.header-nav__item
+        = link_to 'アンチハラスメントポリシー', '/code-of-conduct/', class: 'header-nav__item-link'
+    %li.header-nav__item
+      = link_to 'https://twitter.com/oedorubykaigi', target: '_blank', class: 'header-nav__item-link is-icon' do
+        %i.fa.fa-twitter
