@@ -1,12 +1,12 @@
 ---
 keynotes:
   keynote_1:
-    id: keynote_1_id
-    name: keynote_1_name
+    id: sorah
+    name: Sorah Fukumori
     presentation_title: keynote_1 presentation_title
-    github_id: keynote_1_github_id
-    twitter_id: keynote_1_github_twitter_id
-    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+    github_id: sorah
+    twitter_id: sora_h
+    avatar_url: https://img.sorah.jp/icon2017.rect-a.480.png
 
 invited:
   invited_1:
