@@ -3,8 +3,11 @@
 	margin-top: 10rem
 	+padding(vertical, 3rem)
 	text-align: center
-	background-color: #16508a
+	background-color: $dark-main-color
 	position: relative
+	+media-breakpoint-down(sm)
+		margin-top: 6rem
+		+padding(vertical, 2rem 4rem)
 	&::before
 		content: ''
 		+size(100% 7rem)

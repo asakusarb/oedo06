@@ -1,0 +1,29 @@
+.to-header
+  +position(fixed, left 0, bottom 3.125rem, right 0)
+  display: none
+  &.is-active
+    display: block
+
+.to-header__container
+  max-width: 80rem
+  +padding(horizontal, 1rem)
+  +margin(horizontal, auto)
+  display: flex
+  justify-content: flex-end
+  +media-breakpoint-down(sm)
+    +padding(horizontal, .5rem)
+
+.to-header__link
+  +text-block(1.5rem 1, inline-flex $dark-main-color)
+  +size(2.75rem)
+  align-items: center
+  justify-content: center
+  background-color: rgba(white, .4)
+  border-radius: 50%
+  transition: background-color .2s ease-in
+  i
+    +position(relative, top -.125rem)
+  +media-breakpoint-down(sm)
+    +size(2.5rem)
+  &:hover
+    background-color: rgba(white, .6)
