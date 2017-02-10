@@ -1,23 +1,7 @@
-%header.header
+%header.header#header
   .container
     .header__inner
-      %h1.header__logo
+      %h1.header__logo.is-hidden-sm-down
         = link_to '/', class: 'header__logo-link' do
           = image_tag('header-logo.svg', class: 'header__logo-image')
-      %nav.header-nav
-        %ul.header-nav__items
-          %li.header-nav__item
-            = link_to 'Schedule', '/schedule/', class: 'header-nav__item-link'
-          %li.header-nav__item
-            = link_to 'Speakers', '/speakers/', class: 'header-nav__item-link'
-          %li.header-nav__item
-            = link_to 'Venue', '/venue/', class: 'header-nav__item-link'
-          %li.header-nav__item
-            = link_to 'Parties', '/parties/', class: 'header-nav__item-link'
-          %li.header-nav__item
-            = link_to 'Sponsors', '/sponsors/', class: 'header-nav__item-link'
-          %li.header-nav__item
-            = link_to 'Anti Harassment Policy', '/code-of-conduct/', class: 'header-nav__item-link'
-          %li.header-nav__item
-            = link_to 'https://twitter.com/oedorubykaigi', target: '_blank', class: 'page-nav-icon__link--twitter' do
-              %i.fa.fa-twitter
+      = partial('partials/header_nav')

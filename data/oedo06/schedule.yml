@@ -1,54 +1,52 @@
 ---
-sep08:
-  events:
-  - type: break
-    begin: '08:30'
-    end: '10:00'
-    name: Door Open
-  - type: break
-    begin: '10:00'
-    end: '10:10'
-    name: Opening
-  - type: keynote
-    begin: '10:10'
-    end: '11:10'
-    talks:
-      main_hall: yukihiro_matz
-  - type: talk
-    begin: '11:20'
-    end: '12:00'
-    talks:
-      main_hall: m_seki
-  - type: break
-    begin: '12:00'
-    end: '13:30'
-    name: Lunch Break
-  - type: talk
-    begin: '13:30'
-    end: '14:10'
-    talks:
-      main_hall: pitr_ch
-  - type: talk
-    begin: '14:20'
-    end: '15:00'
-    talks:
-      main_hall: ko1
-  - type: break
-    begin: '15:00'
-    end: '15:30'
-    name: Afternoon Break
-  - type: talk
-    begin: '15:30'
-    end: '16:10'
-    talks:
-      main_hall: nirvdrum
-  - type: talk
-    begin: '16:20'
-    end: '17:00'
-    talks:
-      main_hall: tanaka_akr
-  - type: talk
-    begin: '17:10'
-    end: '17:50'
-    talks:
-      main_hall: duerst
+events:
+- type: break
+  begin: '09:30'
+  end: '10:00'
+  name: Registration Open
+- type: break
+  begin: '10:00'
+  end: '10:10'
+  name: Opening
+- type: keynote
+  begin: '10:10'
+  end: '11:00'
+  name: Keynote
+  talks:
+    keynote
+- type: talk
+  begin: '11:20'
+  end: '12:00'
+  name: Ninja Talks 1
+  talks:
+    ninja_talks_1
+- type: break
+  begin: '12:00'
+  end: '13:30'
+  name: Lunch Break
+- type: talk
+  begin: '13:30'
+  end: '14:10'
+  name: Ninja Talks 2
+  talks:
+    ninja_talks_2
+- type: break
+  begin: '15:00'
+  end: '15:30'
+  name: Afternoon Break
+- type: talk
+  begin: '16:20'
+  end: '17:00'
+  name: 招待講演
+  talks:
+    invited_1
+- type: talk
+  begin: '17:10'
+  end: '17:50'
+  name: 招待講演
+  talks:
+    invited_2
+- type: break
+  begin: '17:50'
+  end: '18:00'
+  name: Closing

@@ -1,7 +1,9 @@
 %footer.footer#footer
-  %p.page-footer__license
-    %span This work by OedoRubyKaigi 06 Team is licensed under a
-    = link_to 'Creative Commons Attribution 3.0 Unported License.', 'http://creativecommons.org/licenses/by/3.0/', class: 'page-footer__license-link', target: '_blank'
+  .container
+    %small.page-footer__license
+      %span This work by OedoRubyKaigi 06 Team is licensed under a
+      = link_to 'Creative Commons Attribution 3.0 Unported License.', 'http://creativecommons.org/licenses/by/3.0/', class: 'page-footer__license-link', target: '_blank'
 
 :javascript
   Mojik.compose(".js-mojik");
+  smoothScroll.init();

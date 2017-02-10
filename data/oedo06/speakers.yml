@@ -1,83 +1,83 @@
 ---
 keynotes:
-  yukihiro_matz:
-    id: yukihiro_matz
-    name: Yukihiro "Matz" Matsumoto
-    bio: The Creator of Ruby
-    github_id: matz
-    twitter_id: yukihiro_matz
-    avatar_url: https://www.gravatar.com/avatar/0ec4920185b657a03edf01fff96b4e9b
-speakers:
-  0xColby:
-    id: 0xColby
-    name: Colby Swandale
-    bio: Working in Melbourne at Marketplacer. I enjoy working on Ruby on Rails projects,
-      low level computing and encryption.
-    github_id: colby-swandale
-    twitter_id: 0xColby
-    avatar_url: https://www.gravatar.com/avatar/68c6cbe82595ac9e51ee1c160756ad55
-  duerst:
-    id: duerst
-    name: Martin J. Dürst
-    bio: Martin is a Professor of Computer Science at Aoyama Gakuin University in
-      Japan. He has been one of the main drivers of Internationalization (I18N) and
-      the use of Unicode on the Web and the Internet. He published the first proposals
-      for DNS I18N and NFC character normalization, and is the main author of the
-      W3C Character Model and the IRI specification (RFC 3987). Since 2007, he and
-      his students have contributed to the implementation of Ruby, mostly in the area
-      of I18N.
-    github_id: duerst
-    twitter_id:
-    avatar_url: https://www.gravatar.com/avatar/f52e87b92cafb1e8c6d155076b56ecff
-  ko1:
-    id: ko1
-    name: Koichi Sasada
-    bio: Koichi Sasada is a programmer, mainly developing Ruby interpreter (CRuby/MRI).
-      He received Ph.D (Information Science and Technology) from the University of
-      Tokyo, 2007. He became a faculty of University of Tokyo (Assistant associate
-      2006-2008, Assistant professor 2008-2012). After the 13 years life in university,
-      now, he is a member of Matz's team in Heroku, Inc. He is also a director of
-      Ruby Association.
-    github_id: ko1
-    twitter_id:
-    avatar_url: https://www.gravatar.com/avatar/990397e8b38d6f5f4ae8ff343e8b883a
-  m_seki:
-    id: m_seki
-    name: Masatoshi SEKI
-    bio: Masatoshi Seki is a Ruby committer and the author of several Ruby standard
-      libraries including dRuby, ERB, and Rinda. He’s an expert in object-oriented
-      programming, distributed systems, and eXtreme programming. He has been speaking
-      at RubyKaigi every year since 2006 when the Kaigi first started.
-    github_id: seki
-    twitter_id: m_seki
-    avatar_url: https://www.gravatar.com/avatar/40f4d1f2e77078955bd01e9fb4a503ba
-  nirvdrum:
-    id: nirvdrum
-    name: Kevin Menard
-    bio: Kevin is a researcher at Oracle Labs where he works as part of a team developing
-      a high performance Ruby implementation in conjunction with the JRuby team. He’s
-      been involved with the Ruby community since 2008 and has been doing open source
-      in some capacity since 1999. In his spare time he’s a father of two and enjoys
-      playing drums.
-    github_id: nirvdrum
-    twitter_id: nirvdrum
-    avatar_url: https://www.gravatar.com/avatar/303aae3354beb438eaa44000b1f2f3fd
-  pitr_ch:
-    id: pitr_ch
-    name: Petr Chalupa
-    bio: He is a core maintainer of concurrent-ruby, where he has contributed concurrent
-      abstractions and a synchronisation layer, providing volatile and atomic instance
-      variables. He is part of the team working on JRuby+Truffle Ruby implementation
-      at Oracle Labs. He is a happy Ruby user for 10 years.
-    github_id: pitr-ch
-    twitter_id: pitr_ch
-    avatar_url: https://www.gravatar.com/avatar/95bcc8d80c505fda705d5c33098f0136
-  tanaka_akr:
-    id: tanaka_akr
-    name: Tanaka Akira
-    bio: |-
-      Ruby committer,
-      Researcher of National Institute of Advanced Industrial Science and Technology (AIST)
-    github_id:
-    twitter_id: tanaka_akr
-    avatar_url: https://www.gravatar.com/avatar/b11f10c4cd9d53970e7be20caa43f940
+  keynote_1:
+    id: sorah
+    name: Sorah Fukumori
+    presentation_title: keynote_1 presentation_title
+    github_id: sorah
+    twitter_id: sora_h
+    avatar_url: https://img.sorah.jp/icon2017.rect-a.480.png
+
+invited:
+  invited_1:
+    id: invited_1_id
+    name: invited_1_name
+    presentation_title: invited_1 presentation_title
+    github_id: invited_1_github_id
+    twitter_id: invited_1_github_twitter_id
+    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+  invited_2:
+    id: invited_2_id
+    name: invited_2_name
+    presentation_title: invited_2 presentation_title
+    github_id: invited_2_github_id
+    twitter_id: invited_2_github_twitter_id
+    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+
+ninja_talks:
+  ninja_1:
+    id: ninja_1_id
+    name: ninja_1_name
+    presentation_title: ninja_1 presentation_title
+    github_id: ninja_1_github_id
+    twitter_id: ninja_1_github_twitter_id
+    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+  ninja_2:
+    id: ninja_2_id
+    name: ninja_2_name
+    presentation_title: ninja_2 presentation_title
+    github_id: ninja_2_github_id
+    twitter_id: ninja_2_github_twitter_id
+    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+  ninja_3:
+    id: ninja_3_id
+    name: ninja_3_name
+    presentation_title: ninja_3 presentation_title
+    github_id: ninja_3_github_id
+    twitter_id: ninja_3_github_twitter_id
+    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+  ninja_4:
+    id: ninja_4_id
+    name: ninja_4_name
+    presentation_title: ninja_4 presentation_title
+    github_id: ninja_4_github_id
+    twitter_id: ninja_4_github_twitter_id
+    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+  ninja_5:
+    id: ninja_5_id
+    name: ninja_5_name
+    presentation_title: ninja_5 presentation_title
+    github_id: ninja_5_github_id
+    twitter_id: ninja_5_github_twitter_id
+    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+  ninja_6:
+    id: ninja_6_id
+    name: ninja_6_name
+    presentation_title: ninja_6 presentation_title
+    github_id: ninja_6_github_id
+    twitter_id: ninja_6_github_twitter_id
+    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+  ninja_7:
+    id: ninja_7_id
+    name: ninja_7_name
+    presentation_title: ninja_7 presentation_title
+    github_id: ninja_7_github_id
+    twitter_id: ninja_7_github_twitter_id
+    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+  ninja_8:
+    id: ninja_8_id
+    name: ninja_8_name
+    presentation_title: ninja_8 presentation_title
+    github_id: ninja_8_github_id
+    twitter_id: ninja_8_github_twitter_id
+    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png

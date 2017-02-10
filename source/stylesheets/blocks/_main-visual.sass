@@ -1,42 +1,35 @@
-.main-visual
-  +padding(vertical, 4rem)
-  +media-breakpoint-down(sm)
-    +padding(vertical, 3rem)
-
 .main-visual__container
   max-width: 46.5rem
   +padding(horizontal, 1rem)
-  +margin(horizontal, auto)
+  margin: 1rem auto 3rem
+  +media-breakpoint-down(sm)
+    +margin(vertical, 0 1.5rem)
 
 .main-visual__image-container
-  +padding(vertical, 5rem)
+  +padding(vertical, 3rem)
   max-width: 44.5rem
   +margin(horizontal, auto)
   +media-breakpoint-down(md)
     max-width: 36.5rem
   +media-breakpoint-down(sm)
-    +padding(vertical, 0)
-    margin-bottom: 2rem
+    +padding(vertical, 2rem 1rem)
+    +padding(horizontal, 1rem)
 
 .main-visual__image
   width: 100%
   display: block
 
 .main-visual__information
-  +text-block(1.375rem 1.8 3rem, center)
+  +text-block(1.125rem 1.8 3rem, center)
   +media-breakpoint-down(md)
     margin-bottom: 4rem
   +media-breakpoint-down(sm)
-    +text-block(1rem 1.6 2rem, center)
+    +text-block(.875rem 1.6 1rem, center)
 
 .main-visual__information-link
   +hover-link-reversal
   color: $default-text
 
-.main-visual__main-action-container
-  margin-bottom: 1.5rem
-  +media-breakpoint-down(sm)
-    margin-bottom: 1rem
 
 .main-visual__main-action
   +text-block(1.5rem 1.5, center flex 800 #17528e)
@@ -50,8 +43,8 @@
   border-radius: .375rem
   transition: top .45s ease
   +media-breakpoint-down(sm)
-    height: 3.75rem
-    font-size: 1.25rem
+    height: 3rem
+    font-size: 1.125rem
   .main-visual__main-action-label
     +position(relative, 1)
     text-shadow: rgba(white, .2) 0 .0625rem .0625rem

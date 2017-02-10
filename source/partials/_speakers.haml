@@ -1,15 +1,31 @@
-%h1.page__frist-title
-  Speakers
-.page-wrapper
-  %section.speaker-container__content
-    %h2.page__sub-title Keynote Speakers
-    %ul.speaker__list
-      - data.oedo06.speakers.keynotes.each do |id, speaker|
-        %li.speaker__list-item
-          = partial 'partials/speaker', locals: { member: speaker }
-  %section.speaker-container__content
-    %h2.page__sub-title Speakers
-    %ul.speaker__list
-      - data.oedo06.speakers.speakers.each do |id, speaker|
-        %li.speaker__list-item
-          = partial 'partials/speaker', locals: { member: speaker }
+%section.section#speakers
+  .container
+    .section__inner
+      %header.section__header
+        %h1.section__primary-headding
+          発表者
+      .section__body
+        %section.speakers
+          .row
+            - data.oedo06.speakers.keynotes.each do |id, speaker|
+              .col-md-4.col-xs-12
+                %h2.speakers__title.is-keynote
+                  Keynote
+                = partial 'partials/speaker', locals: { speaker: speaker }
+            -#
+              TODO 準備が出来たら公開
+              - data.oedo06.speakers.invited.each do |id, speaker|
+                .col-md-4.col-xs-12
+                  %h2.speakers__title.is-invited
+                    招待講演
+                  = partial 'partials/speaker', locals: { speaker: speaker }
+
+        -#
+          TODO 準備が出来たら公開
+          %section.speakers
+            %h2.speakers__title
+              Ninja Talks
+            .row
+              - data.oedo06.speakers.ninja_talks.each do |id, speaker|
+                .col-md-3.col-xs-12
+                  = partial 'partials/speaker', locals: { speaker: speaker }
