@@ -4,8 +4,12 @@
       = link_to '#speakers', class: 'header-nav__item-link', data: {scroll: ''} do
         スピーカー
     %li.header-nav__item
-      = link_to '#time-table', class: 'header-nav__item-link', data: {scroll: ''} do
+      .header-nav__item-link.is-unable
         タイム<br class='is-hidden-md-up'>テーブル
+      -#
+        TODO 準備が出来たら公開
+        = link_to '#time-table', class: 'header-nav__item-link', data: {scroll: ''} do
+          タイム<br class='is-hidden-md-up'>テーブル
     %li.header-nav__item
       = link_to '#venue', class: 'header-nav__item-link', data: {scroll: ''} do
         会場
