@@ -1,7 +1,7 @@
 ---
 keynotes:
   keynote_1:
-    id: sorah
+    id: sora_h
     name: Sorah Fukumori
     presentation_title: keynote_1 presentation_title
     github_id: sorah
@@ -10,74 +10,74 @@ keynotes:
 
 invited:
   invited_1:
-    id: invited_1_id
-    name: invited_1_name
+    id: keiju_ishitsuka
+    name: 石塚圭樹
     presentation_title: invited_1 presentation_title
-    github_id: invited_1_github_id
-    twitter_id: invited_1_github_twitter_id
+    github_id: keiju
+    twitter_id: keiju_ishitsuka
     avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
-  invited_2:
-    id: invited_2_id
-    name: invited_2_name
-    presentation_title: invited_2 presentation_title
-    github_id: invited_2_github_id
-    twitter_id: invited_2_github_twitter_id
-    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+
+  #invited_2:
+    #id: invited_2_id
+    #name: invited_2_name
+    #presentation_title: invited_2 presentation_title
+    #github_id: invited_2_github_id
+    #twitter_id: invited_2_github_twitter_id
+    #avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
 
 ninja_talks:
   ninja_1:
-    id: ninja_1_id
-    name: ninja_1_name
+    id: rosylilly
+    name: Sho Kusano
     presentation_title: ninja_1 presentation_title
-    github_id: ninja_1_github_id
-    twitter_id: ninja_1_github_twitter_id
-    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+    github_id: rosylilly
+    twitter_id: rosylilly
+    avatar_url: https://s.gravatar.com/avatar/36d7a7191914733c57032aa06687a497
   ninja_2:
-    id: ninja_2_id
-    name: ninja_2_name
+    id: ujm
+    name: Tatsuhiro Ujihisa
     presentation_title: ninja_2 presentation_title
-    github_id: ninja_2_github_id
-    twitter_id: ninja_2_github_twitter_id
-    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+    github_id: ujihisa
+    twitter_id: ujm
+    avatar_url: https://i.gyazo.com/f602573f8120afec983aba3d3f5741d0.jpg
   ninja_3:
-    id: ninja_3_id
-    name: ninja_3_name
+    id: _tad_
+    name: 斎藤ただし
     presentation_title: ninja_3 presentation_title
-    github_id: ninja_3_github_id
-    twitter_id: ninja_3_github_twitter_id
-    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+    github_id: tadd
+    twitter_id: _tad_
+    avatar_url: https://s.gravatar.com/avatar/852ee3dd3c2f9889e49cbec473a58e75
   ninja_4:
-    id: ninja_4_id
-    name: ninja_4_name
+    id: ko1
+    name: 笹田耕一
     presentation_title: ninja_4 presentation_title
-    github_id: ninja_4_github_id
-    twitter_id: ninja_4_github_twitter_id
-    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
-  ninja_5:
-    id: ninja_5_id
-    name: ninja_5_name
-    presentation_title: ninja_5 presentation_title
-    github_id: ninja_5_github_id
-    twitter_id: ninja_5_github_twitter_id
-    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
-  ninja_6:
-    id: ninja_6_id
-    name: ninja_6_name
-    presentation_title: ninja_6 presentation_title
-    github_id: ninja_6_github_id
-    twitter_id: ninja_6_github_twitter_id
-    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
-  ninja_7:
-    id: ninja_7_id
-    name: ninja_7_name
-    presentation_title: ninja_7 presentation_title
-    github_id: ninja_7_github_id
-    twitter_id: ninja_7_github_twitter_id
-    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
-  ninja_8:
-    id: ninja_8_id
-    name: ninja_8_name
-    presentation_title: ninja_8 presentation_title
-    github_id: ninja_8_github_id
-    twitter_id: ninja_8_github_twitter_id
-    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+    github_id: ko1
+    avatar_url: https://www.gravatar.com/avatar/990397e8b38d6f5f4ae8ff343e8b883a
+  #ninja_5:
+    #id: ninja_5_id
+    #name: ninja_5_name
+    #presentation_title: ninja_5 presentation_title
+    #github_id: ninja_5_github_id
+    #twitter_id: ninja_5_github_twitter_id
+    #avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+  #ninja_6:
+    #id: ninja_6_id
+    #name: ninja_6_name
+    #presentation_title: ninja_6 presentation_title
+    #github_id: ninja_6_github_id
+    #twitter_id: ninja_6_github_twitter_id
+    #avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+  #ninja_7:
+    #id: ninja_7_id
+    #name: ninja_7_name
+    #presentation_title: ninja_7 presentation_title
+    #github_id: ninja_7_github_id
+    #twitter_id: ninja_7_github_twitter_id
+    #avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+  #ninja_8:
+    #id: ninja_8_id
+    #name: ninja_8_name
+    #presentation_title: ninja_8 presentation_title
+    #github_id: ninja_8_github_id
+    #twitter_id: ninja_8_github_twitter_id
+    #avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png

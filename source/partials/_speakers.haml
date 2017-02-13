@@ -12,20 +12,16 @@
                 %h2.speakers__title.is-keynote
                   Keynote
                 = partial 'partials/speaker', locals: { speaker: speaker }
-            -#
-              TODO 準備が出来たら公開
-              - data.oedo06.speakers.invited.each do |id, speaker|
-                .col-md-4.col-xs-12
-                  %h2.speakers__title.is-invited
-                    招待講演
-                  = partial 'partials/speaker', locals: { speaker: speaker }
+            - data.oedo06.speakers.invited.each do |id, speaker|
+              .col-md-4.col-xs-12
+                %h2.speakers__title.is-invited
+                  招待講演
+                = partial 'partials/speaker', locals: { speaker: speaker }
 
-        -#
-          TODO 準備が出来たら公開
-          %section.speakers
-            %h2.speakers__title
-              Ninja Talks
-            .row
-              - data.oedo06.speakers.ninja_talks.each do |id, speaker|
-                .col-md-3.col-xs-12
-                  = partial 'partials/speaker', locals: { speaker: speaker }
+        %section.speakers
+          %h2.speakers__title
+            Ninja Talks
+          .row
+            - data.oedo06.speakers.ninja_talks.each do |id, speaker|
+              .col-md-3.col-xs-12
+                = partial 'partials/speaker', locals: { speaker: speaker }
