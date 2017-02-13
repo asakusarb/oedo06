@@ -1,77 +1,9 @@
-%h1.page__frist-title
-  Sponsors
-.page-wrapper
-  %section.sponsor-container__content
-    %h2.page__sub-title#ruby Ruby Sponsors
-    .sponsor-list__xl
-      - data.oedo06.sponsors.ruby.each do |sponsor|
-        = partial 'partials/sponsor', locals: { sponsor: sponsor }
-  %section.sponsor-container__content
-    %h2.page__sub-title#name_badge :name_badge: Sponsor
-    .sponsor-list__xl
-      - data.oedo06.sponsors.name_badge.each do |sponsor|
-        = partial 'partials/sponsor', locals: { sponsor: sponsor }
-  - unless data.oedo06.sponsors.offical_party.empty?
-    %section.sponsor-container__content
-      %h2.page__sub-title#party Offical Party Sponsor
-      .sponsor-list__lg
-        - data.oedo06.sponsors.offical_party.each do |sponsor|
-          = partial 'partials/sponsor', locals: { sponsor: sponsor }
-  %section.sponsor-container__content
-    %h2.page__sub-title#platinum Platinum Sponsors
-    .sponsor-list__md
-      - data.oedo06.sponsors.platinum.each do |sponsor|
-        = partial 'partials/sponsor', locals: { sponsor: sponsor }
-  - unless data.oedo06.sponsors.drinkup.empty?
-    %section.sponsor-container__content
-      %h2.page__sub-title#drinkup Drinkup Sponsor
-      .sponsor-list__md
-        - data.oedo06.sponsors.drinkup.each do |sponsor|
-          = partial 'partials/sponsor', locals: { sponsor: sponsor }
-  - unless data.oedo06.sponsors.bento.empty?
-    %section.sponsor-container__content
-      %h2.page__sub-title#bento Bento Sponsor
-      .sponsor-list__md
-        - data.oedo06.sponsors.bento.each do |sponsor|
-          = partial 'partials/sponsor', locals: { sponsor: sponsor }
-  - unless data.oedo06.sponsors.wifi.empty?
-    %section.sponsor-container__content
-      %h2.page__sub-title#wifi Wi-Fi Sponsor
-      .sponsor-list__md
-        - data.oedo06.sponsors.wifi.each do |sponsor|
-          = partial 'partials/sponsor', locals: { sponsor: sponsor }
-  - unless data.oedo06.sponsors.nursery.empty?
-    %section.sponsor-container__content
-      %h2.page__sub-title#nursery Nursery Sponsor
-      .sponsor-list__md-2
-        - data.oedo06.sponsors.nursery.each do |sponsor|
-          = partial 'partials/sponsor', locals: { sponsor: sponsor }
-  - unless data.oedo06.sponsors.gold.empty?
-    %section.sponsor-container__content
-      %h2.page__sub-title#gold Gold Sponsors
-      .sponsor-list__sm
-        - data.oedo06.sponsors.gold.each do |sponsor|
-          = partial 'partials/sponsor', locals: { sponsor: sponsor }
-  - unless data.oedo06.sponsors.app.empty?
-    %section.sponsor-container__content
-      %h2.page__sub-title#app Mobile Application Sponsor
-      .sponsor-list__sm
-        - data.oedo06.sponsors.app.each do |sponsor|
-          = partial 'partials/sponsor', locals: { sponsor: sponsor }
-  - unless data.oedo06.sponsors.karaoke.empty?
-    %section.sponsor-container__content
-      %h2.page__sub-title#rubykaraoke RubyKaraoke Sponsor
-      .sponsor-list__xs
-        - data.oedo06.sponsors.karaoke.each do |sponsor|
-          = partial 'partials/sponsor', locals: { sponsor: sponsor }
-  %section.sponsor-container__content
-    %h2.page__sub-title#silver Silver Sponsors
-    .sponsor-list__xs
-      - data.oedo06.sponsors.silver.each do |sponsor|
-        = partial 'partials/sponsor', locals: { sponsor: sponsor }
-  - unless data.oedo06.sponsors.additional.empty?
-    %section.sponsor-container__content
-      %h2.page__sub-title#additional Additional Sponsors
-      .sponsor-list__xs
-        - data.oedo06.sponsors.additional.each do |sponsor|
+%section.section
+  .container
+    .section__inner
+      %header.section__header
+        %h1.section__primary-headding
+          スポンサー
+      .section__body
+        - data.oedo06.sponsors.each do |sponsor|
           = partial 'partials/sponsor', locals: { sponsor: sponsor }
