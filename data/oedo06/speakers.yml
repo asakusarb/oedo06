@@ -15,7 +15,7 @@ invited:
     presentation_title: invited_1 presentation_title
     github_id: keiju
     twitter_id: keiju_ishitsuka
-    avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+    avatar_url: /images/speakers/blank.png
 
   #invited_2:
     #id: invited_2_id
@@ -23,7 +23,7 @@ invited:
     #presentation_title: invited_2 presentation_title
     #github_id: invited_2_github_id
     #twitter_id: invited_2_github_twitter_id
-    #avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+    #avatar_url: /images/speakers/blank.png
 
 ninja_talks:
   ninja_1:
@@ -39,7 +39,7 @@ ninja_talks:
     presentation_title: ninja_2 presentation_title
     github_id: ujihisa
     twitter_id: ujm
-    avatar_url: https://i.gyazo.com/3278014cbc33d195d8c70bfbecd313ce.jpg
+    avatar_url: /images/speakers/ujishita.jpg
   ninja_3:
     id: _tad_
     name: 斎藤ただし
@@ -59,25 +59,25 @@ ninja_talks:
     #presentation_title: ninja_5 presentation_title
     #github_id: ninja_5_github_id
     #twitter_id: ninja_5_github_twitter_id
-    #avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+    #avatar_url: /images/speakers/blank.png
   #ninja_6:
     #id: ninja_6_id
     #name: ninja_6_name
     #presentation_title: ninja_6 presentation_title
     #github_id: ninja_6_github_id
     #twitter_id: ninja_6_github_twitter_id
-    #avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+    #avatar_url: /images/speakers/blank.png
   #ninja_7:
     #id: ninja_7_id
     #name: ninja_7_name
     #presentation_title: ninja_7 presentation_title
     #github_id: ninja_7_github_id
     #twitter_id: ninja_7_github_twitter_id
-    #avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+    #avatar_url: /images/speakers/blank.png
   #ninja_8:
     #id: ninja_8_id
     #name: ninja_8_name
     #presentation_title: ninja_8 presentation_title
     #github_id: ninja_8_github_id
     #twitter_id: ninja_8_github_twitter_id
-    #avatar_url: https://i.gyazo.com/ba82616fbc052a0591ae6c5d3cc4d0c4.png
+    #avatar_url: /images/speakers/blank.png
