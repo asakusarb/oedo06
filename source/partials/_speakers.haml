@@ -9,7 +9,7 @@
           %section.speakers
             .row
               - data.oedo06.speakers.keynotes.each do |id, speaker|
-                .col-md-4.col-xs-12
+                .col-md-4.offset-md-2.col-xs-12
                   %h2.speakers__title.is-keynote
                     Keynote
                   = partial 'partials/speaker', locals: { speaker: speaker }
