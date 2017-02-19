@@ -5,5 +5,7 @@
         %h1.section__primary-headding
           スポンサー
       .section__body
-        - data.oedo06.sponsors.each do |sponsor|
-          = partial 'partials/sponsor', locals: { sponsor: sponsor }
+        .row
+          - data.oedo06.sponsors.each do |sponsor|
+            .col-md-6
+              = partial 'partials/sponsor', locals: { sponsor: sponsor }
