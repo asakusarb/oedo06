@@ -17,14 +17,6 @@ invited:
     twitter_id: keiju_ishitsuka
     avatar_url: /images/speakers/blank.png
 
-  #invited_2:
-    #id: invited_2_id
-    #name: invited_2_name
-    #presentation_title: invited_2 presentation_title
-    #github_id: invited_2_github_id
-    #twitter_id: invited_2_github_twitter_id
-    #avatar_url: /images/speakers/blank.png
-
 ninja_talks:
   ninja_1:
     id: rosylilly
