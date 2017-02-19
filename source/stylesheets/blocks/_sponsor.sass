@@ -8,20 +8,32 @@
   overflow: hidden
   align-items: flex-start
   +size(13.75rem)
+  +media-breakpoint-down(sm)
+    +size(4.5rem)
+    margin-right: .5rem
+    border: .25rem solid rgba($black, .18)
 
 .sponsor__logo-image
   +size(100%)
   display: block
 
+.sponsor-list__overview
+  display: flex
+  justify-content: center
+  flex-direction: column
+
 .sponsor__name-link
-  +text-block(1.5rem 1.45 .25rem, $default-text)
+  +text-block(1.5rem 1.45, $default-text)
+  font-family: 'Signika', sans-serif
   +hover-link
   transition: color .2s ease-in
+  +media-breakpoint-down(sm)
+    +text-block(1.25rem)
   &:hover
     color: $accent-color
 
 .sponsor__url-link
-  +text-block(.8125rem 1.45, $default-text)
+  +text-block(.8125rem 1.45, $muted-text)
   &:hover
     color: $accent-color
 
