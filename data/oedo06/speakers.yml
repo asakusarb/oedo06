@@ -66,10 +66,10 @@ ninja_talks:
     github_id: soutaro
     twitter_id: soutaro
     avatar_url: https://s.gravatar.com/avatar/1fab9d01b25e99522f3dfd01e3d4cb51
-  #ninja_8:
-    #id: ninja_8_id
-    #name: ninja_8_name
-    #presentation_title: ninja_8 presentation_title
-    #github_id: ninja_8_github_id
-    #twitter_id: ninja_8_github_twitter_id
-    #avatar_url: /images/speakers/blank.png
+  ninja_8:
+    id: JuanitoFatas
+    name: Juanito Fatas
+    presentation_title: ninja_8 presentation_title
+    github_id: JuanitoFatas
+    twitter_id: JuanitoFatas
+    avatar_url: https://avatars0.githubusercontent.com/u/1000669
