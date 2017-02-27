@@ -16,10 +16,10 @@
       - data.oedo06.speakers.invited.each do |id, speaker|
         = partial 'partials/speaker_lg', locals: { speaker: speaker }
 
-    %section.speakers-block.is-war
-      %h2.speakers-block__war-title
-        %span.speakers-block__war-title-image-container
-          = image_tag('war.svg', class: "speakers-block__war-title-image")
+    %section.speakers-block.is-battle
+      %h2.speakers-block__battle-title
+        %span.speakers-block__battle-title-image-container
+          = image_tag('battle.svg', class: "speakers-block__battle-title-image")
         フルタイムコミッター大戦
       .row
         - data.oedo06.speakers.full_time_ruby_committers.each do |id, speaker|
@@ -29,8 +29,8 @@
     %section.speakers-block.is-ninja-talks
       %header.speakers-block__header
         %h2.speakers-block__ninja-talks-title
-          %span.speakers-block__war-title-image-container
-            = image_tag('ninja.svg', class: "speakers-block__war-title-image")
+          %span.speakers-block__battle-title-image-container
+            = image_tag('ninja.svg', class: "speakers-block__battle-title-image")
           Ninja Talks
       .row
         - data.oedo06.speakers.ninja_talks.each do |id, speaker|
