@@ -1,5 +1,8 @@
 .sponsor
   display: flex
+  +media-breakpoint-only(md)
+    display: block
+    text-align: center
 
 .sponsor__logo
   margin-right: 2rem
@@ -8,6 +11,9 @@
   overflow: hidden
   align-items: flex-start
   +size(13.75rem auto)
+  +media-breakpoint-only(md)
+    +margin(horizontal, auto)
+    margin-bottom: .5rem
   +media-breakpoint-down(sm)
     +size(4.5rem auto)
     margin-right: .5rem
