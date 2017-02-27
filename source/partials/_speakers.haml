@@ -1,31 +1,38 @@
-%section.section#speakers
+%section.speakers#speakers
   .container
-    .section__inner
-      %header.section__header
-        %h1.section__primary-headding
-          発表者
-      .section__body
-        .speakers-blocks
-          %section.speakers
-            .row
-              - data.oedo06.speakers.keynotes.each do |id, speaker|
-                .col-md-4.offset-md-2.col-xs-12
-                  %h2.speakers__title.is-keynote
-                    Keynote
-                  = partial 'partials/speaker', locals: { speaker: speaker }
-              - data.oedo06.speakers.invited.each do |id, speaker|
-                .col-md-4.col-xs-12
-                  %h2.speakers__title.is-invited
-                    招待講演
-                  = partial 'partials/speaker', locals: { speaker: speaker }
+    %header.speakers__header
+      %h1.speakers__title
+        発表者
+    .speakers-block.is-main-talks
+      %h2.speakers-block__main-talk-title
+        %span.speakers-block__main-talk-title-inner
+          Keynote
+      - data.oedo06.speakers.keynotes.each do |id, speaker|
+        = partial 'partials/speaker_lg', locals: { speaker: speaker }
+    .speakers-block.is-main-talks
+      %h2.speakers-block__main-talk-title
+        %span.speakers-block__main-talk-title-inner
+          招待講演
+      - data.oedo06.speakers.invited.each do |id, speaker|
+        = partial 'partials/speaker_lg', locals: { speaker: speaker }
 
-          %section.speakers
-            %h2.speakers__title
-              Ninja Talks
-            .row
-              - data.oedo06.speakers.ninja_talks.each do |id, speaker|
-                .col-md-3.col-xs-12
-                  = partial 'partials/speaker', locals: { speaker: speaker }
+    %section.speakers-block.is-war
+      %h2.speakers-block__war-title
+        %span.speakers-block__war-title-image-container
+          = image_tag('war.svg', class: "speakers-block__war-title-image")
+        フルタイムコミッター大戦
+      .row
+        - data.oedo06.speakers.full_time_ruby_committers.each do |id, speaker|
+          .col-md-6.col-xs-12
+            = partial 'partials/speaker_lg', locals: { speaker: speaker }
 
-        .and-more
-          …and more!
+    %section.speakers-block.is-ninja-talks
+      %header.speakers-block__header
+        %h2.speakers-block__ninja-talks-title
+          %span.speakers-block__war-title-image-container
+            = image_tag('ninja.svg', class: "speakers-block__war-title-image")
+          Ninja Talks
+      .row
+        - data.oedo06.speakers.ninja_talks.each do |id, speaker|
+          .col-md-4.col-xs-12
+            = partial 'partials/speaker', locals: { speaker: speaker }
