@@ -1,87 +1,137 @@
 .speakers
-  margin-bottom: -2rem
-  &:not(:last-child)
-    margin-bottom: 2rem
+  margin-bottom: 4rem
   +media-breakpoint-down(sm)
-    margin-bottom: 0
+    margin-bottom: 2rem
+
+.speakers__header
+  margin-bottom: 4rem
+  text-align: center
+  +media-breakpoint-down(sm)
+    margin-bottom: 1.5rem
 
 .speakers__title
-  border: solid .0625rem $default-text
-  +text-block(.8125rem 1.5 1.5rem, center flex 600)
-  justify-content: center
-  align-items: center
-  height: 1.75rem
-  background-color: rgba(black, .08)
-  width: 172px
-  +margin(horizontal, auto)
+  +text-block(2.25rem 1.5, 800 .1em center inline-block)
+  +position(relative)
+  +padding(horizontal, 8rem)
   +media-breakpoint-down(sm)
-    width: 100%
-    margin-bottom: .75rem
-
-.speaker
-  margin-bottom: 2rem
+    +padding(horizontal, 5.75rem)
+  &::before,
+  &::after
+    content: ''
+    display: block
+    +size(6.25rem .0625rem)
+    background-color: $default-text
+    +media-breakpoint-down(sm)
+      width: 5rem
+  &::before
+    +position(absolute, left 0, top 50%)
+  &::after
+    +position(absolute, right 0, top 50%)
   +media-breakpoint-down(sm)
-    display: flex
-    margin-bottom: 1rem
-    [class*="col-"]:last-child &
-      margin-bottom: 0
+    +text-block(1.25rem, 600)
 
-.speaker__avatar
-  +size(10.5rem auto)
-  max-width: 100%
-  border: .375rem solid rgba($black, .18)
-  border-radius: .625rem
-  +margin(horizontal, auto)
-  margin-bottom: .5rem
-  +media-breakpoint-down(sm)
-    +size(4.5rem)
-    border: .25rem solid rgba($black, .18)
-    border-radius: .625rem
-    +margin(horizontal, 0 .5rem)
-    margin-bottom: 0
-
-.speaker__avatar-image
-  +size(100% auto)
-  border-radius: 6px
-
-.speaker__text-data
-  +media-breakpoint-down(sm)
-    display: flex
-    flex-direction: column
-    flex: 100
-    justify-content: center
-
-.speaker__name
-  +text-block(1.125rem 1.5, center 600)
-  font-family: 'Signika', sans-serif
-  +media-breakpoint-down(sm)
-    +text-block(1rem, left)
-
-.speaker-channels
-  +text-block(.875rem 1.5, center flex)
-  justify-content: center
-  align-items: baseline
-  +media-breakpoint-down(sm)
-    justify-content: flex-start
-
-.speaker-channels__item
-  color: $muted-text
+.speakers-block
+  +position(relative)
   &:not(:last-child)
-    margin-right: .5rem
-  &.is-id
-    font-family: 'Signika', sans-serif
-  +media-breakpoint-down(sm)
-    font-size: .8125rem
-    color: $muted-text
+    margin-bottom: 4rem
+    +media-breakpoint-down(sm)
+      margin-bottom: 2rem
+  &.is-main-talks
+    max-width: 40rem
+    +margin(horizontal, auto)
+    padding-left: 13rem
+    +media-breakpoint-down(sm)
+      padding-left: 0
+  &.is-battle
+    max-width: 50rem
+    +margin(horizontal, auto)
+  &.is-ninja-talks
+    max-width: 57rem
+    +margin(horizontal, auto)
 
-.speaker-channels__item-link
-  font-size: 1.25rem
-  color: $muted-text
-  transition: color .2s ease-in
-  &:hover
-    color: $link-color
+.speakers-block__header
+  text-align: center
+
+.speakers-block__title
+  +text-block(1.5rem 1.5, 800 .1em center #656566)
+  text-indent: .1em
+  +padding(horizontal, 1.5rem)
+  +position(relative)
   +media-breakpoint-down(sm)
-    color: $muted-text
-    font-size: .875rem
-    &:active
-      color: $link-color
+    +text-block(1.25rem, 600)
+
+.speakers-block__main-talk-title
+  +text-block(1.125rem 1.5, 600 center #656566)
+  +position(absolute, left 0, top 1.5rem)
+  transform: rotate(-10deg)
+  +size(8rem 2.25rem)
+  padding-left: .375rem
+  +media-breakpoint-down(sm)
+    position: static
+    transform: rotate(0)
+    padding-left: 0
+    font-size: .8125rem
+    +size(6rem 1.5rem)
+    margin-bottom: 1rem
+  &::before
+    content: ''
+    display: block
+    +position(absolute, left 0, top 0)
+    +size(.25rem 5rem)
+    background-color: #744c24
+    border-radius: .125rem
+    +media-breakpoint-down(sm)
+      content: none
+
+.speakers-block__main-talk-title-inner
+  background-color: #fcee21
+  display: flex
+  align-items: center
+  justify-content: center
+  +size(100%)
+  padding-right: .5rem
+  &::before
+    content: ''
+    display: block
+    +position(absolute, right -1px, top -1px)
+    +size(0)
+    border-width: 1.25rem .625rem
+    border-color: transparent
+    border-style: solid
+    border-right-color: $base-color
+    +media-breakpoint-down(sm)
+      border-width: 14px 6px
+
+.speakers-block__battle-title
+  +text-block(1.75rem 1.5 3rem, 800 center)
+  border-bottom: solid .0625rem rgba(white, .2)
+  padding-bottom: .5rem
+  +margin(horizontal, auto)
+  max-width: 50rem
+  +media-breakpoint-down(sm)
+    +text-block(1.125rem 1.5 1rem, 600)
+
+.speakers-block__battle-title-image-container
+  display: block
+  +size(4rem)
+  padding: .625rem
+  background-color: rgba(white, .4)
+  border-radius: 50%
+  margin: 0 auto .75rem
+  +media-breakpoint-down(sm)
+    +size(3rem)
+    margin-bottom: .5rem
+
+.speakers-block__battle-title-image
+  +size(100%)
+  display: block
+
+.speakers-block__ninja-talks-title
+  +text-block(1.75rem 1.5 3rem, 800 center)
+  border-bottom: solid .0625rem rgba(white, .2)
+  padding-bottom: .5rem
+  +margin(horizontal, auto)
+  font-family: 'Signika', sans-serif
+  max-width: 50rem
+  +media-breakpoint-down(sm)
+    +text-block(1.125rem 1.5 1rem, 600)

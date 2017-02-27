@@ -17,6 +17,35 @@ invited:
     twitter_id: keiju_ishitsuka
     avatar_url: /images/speakers/blank.png
 
+full_time_ruby_committers:
+  full_time_ruby_committers_1:
+    id: n0kada
+    name: 中田伸悦
+    presentation_title: full_time_ruby_committers_1 presentation_title
+    github_id: nobu
+    twitter_id: n0kada
+    avatar_url: https://s.gravatar.com/avatar/f1d6cc2b735bfd82c8773172da2aeab9
+  full_time_ruby_committers_2:
+    id: shyouhei
+    name: Urabe Shyouhei
+    presentation_title: full_time_ruby_committers_2 presentation_title
+    github_id: shyouhei
+    twitter_id: shyouhei
+    avatar_url: http://s.gravatar.com/avatar/9d2f78236e45a335301ba1195026105d
+  full_time_ruby_committers_3:
+    id: ko1
+    name: 笹田耕一
+    presentation_title: full_time_ruby_committers_3 presentation_title
+    github_id: ko1
+    avatar_url: https://www.gravatar.com/avatar/990397e8b38d6f5f4ae8ff343e8b883a
+  full_time_ruby_committers_4:
+    id: mrkn
+    name: Kenta Murata
+    presentation_title: full_time_ruby_committers_3 presentation_title
+    twitter_id: mrkn
+    github_id: mrkn
+    avatar_url: https://www.gravatar.com/avatar/819b3c0a25f9708fd32261b8ae2d23f6
+
 ninja_talks:
   ninja_1:
     id: rosylilly
@@ -73,3 +102,10 @@ ninja_talks:
     github_id: JuanitoFatas
     twitter_id: JuanitoFatas
     avatar_url: https://avatars0.githubusercontent.com/u/1000669
+  ninja_9:
+    id: shugomaeda
+    name: 前田修吾
+    presentation_title: ninja_9 presentation_title
+    github_id: shugo
+    twitter_id: shugomaeda
+    avatar_url: https://s.gravatar.com/avatar/18a797893e6768e048c1d15429f96bb4?s=200
