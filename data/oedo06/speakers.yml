@@ -24,27 +24,27 @@ full_time_ruby_committers:
     presentation_title: full_time_ruby_committers_1 presentation_title
     github_id: nobu
     twitter_id: n0kada
-    avatar_url: https://s.gravatar.com/avatar/f1d6cc2b735bfd82c8773172da2aeab9
+    avatar_url: https://www.gravatar.com/avatar/f1d6cc2b735bfd82c8773172da2aeab9?s=320
   full_time_ruby_committers_2:
     id: shyouhei
     name: Urabe Shyouhei
     presentation_title: full_time_ruby_committers_2 presentation_title
     github_id: shyouhei
     twitter_id: shyouhei
-    avatar_url: http://s.gravatar.com/avatar/9d2f78236e45a335301ba1195026105d
+    avatar_url: https://www.gravatar.com/avatar/9d2f78236e45a335301ba1195026105d?s=320
   full_time_ruby_committers_3:
     id: ko1
     name: 笹田耕一
     presentation_title: full_time_ruby_committers_3 presentation_title
     github_id: ko1
-    avatar_url: https://www.gravatar.com/avatar/990397e8b38d6f5f4ae8ff343e8b883a
+    avatar_url: https://www.gravatar.com/avatar/990397e8b38d6f5f4ae8ff343e8b883a?s=320
   full_time_ruby_committers_4:
     id: mrkn
     name: Kenta Murata
     presentation_title: full_time_ruby_committers_3 presentation_title
     twitter_id: mrkn
     github_id: mrkn
-    avatar_url: https://www.gravatar.com/avatar/819b3c0a25f9708fd32261b8ae2d23f6
+    avatar_url: https://www.gravatar.com/avatar/819b3c0a25f9708fd32261b8ae2d23f6?s=320
 
 ninja_talks:
   ninja_1:
@@ -53,7 +53,7 @@ ninja_talks:
     presentation_title: ninja_1 presentation_title
     github_id: rosylilly
     twitter_id: rosylilly
-    avatar_url: https://s.gravatar.com/avatar/36d7a7191914733c57032aa06687a497
+    avatar_url: https://www.gravatar.com/avatar/36d7a7191914733c57032aa06687a497?s=320
   ninja_2:
     id: ujm
     name: Tatsuhiro Ujihisa
@@ -67,13 +67,13 @@ ninja_talks:
     presentation_title: ninja_3 presentation_title
     github_id: tadd
     twitter_id: _tad_
-    avatar_url: https://s.gravatar.com/avatar/852ee3dd3c2f9889e49cbec473a58e75
+    avatar_url: https://www.gravatar.com/avatar/852ee3dd3c2f9889e49cbec473a58e75?s=320
   ninja_4:
     id: ko1
     name: 笹田耕一
     presentation_title: ninja_4 presentation_title
     github_id: ko1
-    avatar_url: https://www.gravatar.com/avatar/990397e8b38d6f5f4ae8ff343e8b883a
+    avatar_url: https://www.gravatar.com/avatar/990397e8b38d6f5f4ae8ff343e8b883a?s=320
   ninja_5:
     id: ken_c_lo
     name: 赤塚 妙子
@@ -87,14 +87,14 @@ ninja_talks:
     presentation_title: ninja_6 presentation_title
     github_id: joker1007
     twitter_id: joker1007
-    avatar_url: https://s.gravatar.com/avatar/a5e5ee2fb9e4ce3c728ed9e3ef6e916f
+    avatar_url: https://www.gravatar.com/avatar/a5e5ee2fb9e4ce3c728ed9e3ef6e916f?s=320
   ninja_7:
     id: soutaro
     name: 松本宗太郎
     presentation_title: ninja_7 presentation_title
     github_id: soutaro
     twitter_id: soutaro
-    avatar_url: https://s.gravatar.com/avatar/1fab9d01b25e99522f3dfd01e3d4cb51
+    avatar_url: https://www.gravatar.com/avatar/1fab9d01b25e99522f3dfd01e3d4cb51?s=320
   ninja_8:
     id: JuanitoFatas
     name: Juanito Fatas
@@ -108,4 +108,4 @@ ninja_talks:
     presentation_title: ninja_9 presentation_title
     github_id: shugo
     twitter_id: shugomaeda
-    avatar_url: https://s.gravatar.com/avatar/18a797893e6768e048c1d15429f96bb4?s=200
+    avatar_url: https://www.gravatar.com/avatar/18a797893e6768e048c1d15429f96bb4?s=320
