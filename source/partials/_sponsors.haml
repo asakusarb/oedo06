@@ -1,11 +1,14 @@
-%section.section
-  .container
-    .section__inner
-      %header.section__header
-        %h1.section__primary-headding
-          スポンサー
-      .section__body
-        .row
-          - data.oedo06.sponsors.each do |sponsor|
-            .col-md-6.col-xs-12
-              = partial 'partials/sponsor', locals: { sponsor: sponsor }
+%section.sponsors
+  .container.is-sponsor
+    %header.sponsors__header
+      %h1.section__primary-headding.is-text-align-center
+        スポンサー
+    .section__body.is-sponsor
+      - data.oedo06.sponsors.each do |sponsor|
+        = partial 'partials/sponsor', locals: { sponsor: sponsor }
+
+    .ticket-sponsor
+      %h2.ticket-sponsor__label
+        チケット販売スポンサー
+      = link_to "https://www.doorkeeper.jp/", target: "_blank", class: "ticket-sponsor__link" do
+        = image_tag('sponsors/doorkeeper-white.svg', class: "ticket-sponsor__logo", alt: "Doorkeeper")

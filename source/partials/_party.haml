@@ -1,0 +1,32 @@
+%section.section#party
+  .container
+    .party
+      %header.party__header
+        %h1.party__title
+          パーティー
+        = image_tag('flags-left.svg', class: "party__flags is-left")
+        = image_tag('flags-right.svg', class: "party__flags is-right")
+      .party__body
+        .party__content.venue-address
+          %h2.party__secondary-headding
+            <span class="party__secondary-headding-label">会場</span>:
+            = link_to 'http://www.cafe1045.com', class: 'party__secondary-headding-link', target: '_blank' do
+              cafe 104.5
+          %time.party__time
+            開始時間: 18:00
+          %address.venue__address
+            東京都千代田区神田淡路町2-101
+            %br
+            ワテラスタワー 2F
+          .venue__map
+            = link_to 'https://goo.gl/E5CWM9', class: 'party__map-link', target: '_blank' do
+              %i.fa.fa-map-marker
+              Google Map
+
+        = link_to "https://asakusarb.doorkeeper.jp/events/58018", class: "party__link-button", target: "_blank" do
+          %span.party__link-button-label
+            参加登録
+          %span.party__link-button-price
+            6,000円 前払い
+
+        = image_tag('beer.svg', class: "party__beer")

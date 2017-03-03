@@ -5,11 +5,14 @@
         %h1.section__primary-headding
           会場
       .section__body
+        %h2.venue__name
+          = link_to "http://solacity.jp/cc/index.html", class: "venue__name-link", target: "_blank" do
+            ソラシティカンファレンスセンター
         .row
           .col-md-6.col-xs-12
             .section__content.venue-address
-              %h2.venue__name.section__secondary-headding
-                ソラシティカンファレンスセンター
+              %h3.section__primary-label.venue__access-title
+                所在地              
               %address.venue__address
                 東京都千代田区神田駿河台 4-6
                 %br.is-hidden-md-up
