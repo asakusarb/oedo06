@@ -1,0 +1,119 @@
+.party
+  max-width: 49rem
+  +margin(horizontal, auto)
+  background-image: image_url('party__bg.png')
+  background-repeat: repeat
+  text-align: center
+  color: $reversal-text
+  padding-bottom: 2rem
+  box-shadow: 0 0 0 .5rem rgba(white, .3)
+  border-radius: .5rem
+  overflow: hidden
+  +media-breakpoint-down(sm)
+    +margin(horizontal, .5rem)
+
+.party__header
+  +position(relative)
+  padding-top: 4.5rem
+  +media-breakpoint-down(sm)
+    padding-top: 2.5rem
+
+.party__flags
+  +size(48% auto)
+  +media-breakpoint-down(sm)
+    width: 70%
+  &.is-left
+    +position(absolute, left 0, top 0)
+    +media-breakpoint-down(sm)
+      left: -30%
+  &.is-right
+    +position(absolute, right 0, top 0)
+    +media-breakpoint-down(sm)
+      right: -30%
+
+.party__title
+  +text-block(2.25rem 1.45, 800)
+  +media-breakpoint-down(sm)
+    font-size: 1.5rem
+
+.party__body
+  +position(relative)
+  +padding(horizontal, 1.5rem)
+
+.party__content
+  margin-bottom: 2rem
+
+.party__secondary-headding
+  +text-block(1.5rem 1.45 .75rem, center)
+  margin-top: .5rem
+  +media-breakpoint-down(sm)
+    font-size: 1rem
+    margin-bottom: .75rem
+
+.party__secondary-headding-label
+  font-size: 1.25rem
+  +media-breakpoint-down(sm)
+    font-size: .875rem
+
+.party__secondary-headding-link
+  color: $reversal-text
+  +hover-link-reversal
+  &:hover
+    color: #ec670c
+
+.party__time
+  +text-block(.875rem 1.5 .25rem, block)
+  font-style: normal
+  +media-breakpoint-down(sm)
+    text-align: center
+
+.party__map-link
+  color: #ec670c
+  +hover-link-reversal
+  +media-breakpoint-down(sm)
+    display: flex
+    border: solid .0625rem #ec670c
+    background-color: rgba(white, .2)
+    align-items: center
+    justify-content: center
+    height: 2.25rem
+    margin-top: .75rem
+    border-radius: .25rem
+    text-decoration: none
+    &:hover
+      text-decoration: none
+    i
+      margin-right: .5rem
+
+.party__link-button
+  background: #ea657e
+  height: 4.5rem
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  max-width: 18rem
+  +margin(horizontal, auto)
+  color: $default-text
+  border-radius: .5rem
+  transition: opacity .2s ease-in
+  &:hover
+    opacity: .8
+  +media-breakpoint-down(sm)
+    height: 3rem
+    max-width: 100%
+
+.party__link-button-label
+  +text-block(1.5rem 1 .5rem, 800 .0625rem)
+  +media-breakpoint-down(sm)
+    font-size: 1rem
+    margin-bottom: .125rem
+
+.party__link-button-price
+  +text-block(.75rem 1)
+
+.party__beer
+  +position(absolute, left 2rem, bottom 4rem)
+  +size(25% auto)
+  +media-breakpoint-down(sm)
+    display: none

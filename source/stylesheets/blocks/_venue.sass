@@ -10,26 +10,43 @@
     margin-bottom: 1rem
 
 .venue__name
-  margin-bottom: .5rem
+  +text-block(1.5rem 1.45 1.25rem, center)
+  margin-top: .5rem
   +media-breakpoint-down(sm)
-    text-align: center
+    font-size: 1rem
+    margin-bottom: .75rem
+
+.venue__name-link
+  color: $default-text
+  +hover-link-reversal
+  transition: color .2s ease-in
+  &:hover
+    color: $accent-color
 
 .venue__address
   +text-block(.875rem 1.5 .25rem)
   font-style: normal
+  +media-breakpoint-down(sm)
+    text-align: center
 
 .venue__access-title
   margin-bottom: .5rem
+  +media-breakpoint-down(sm)
+    display: none
 
 .venue__map-link
   color: $link-color
-  +hover-link
+  +hover-link-reversal
   +media-breakpoint-down(sm)
     display: flex
     border: solid .0625rem $link-color
     align-items: center
     justify-content: center
-    height: 2.5rem
+    height: 2.25rem
     margin-top: .75rem
+    border-radius: .25rem
+    text-decoration: none
+    &:hover
+      text-decoration: none
     i
       margin-right: .5rem

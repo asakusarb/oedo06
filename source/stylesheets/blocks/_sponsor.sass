@@ -1,23 +1,25 @@
+.sponsors
+  margin-bottom: 3rem
+
 .sponsor
-  display: flex
-  +media-breakpoint-only(md)
-    display: block
-    text-align: center
+  text-align: center
 
 .sponsor__logo
-  margin-right: 2rem
   border: .375rem solid rgba($black, .18)
   border-radius: 10px
   overflow: hidden
-  align-items: flex-start
   +size(13.75rem auto)
+  +margin(horizontal, auto)
+  margin-bottom: .5rem
   +media-breakpoint-only(md)
     +margin(horizontal, auto)
-    margin-bottom: .5rem
   +media-breakpoint-down(sm)
-    +size(4.5rem auto)
-    margin-right: .5rem
+    +size(8rem auto)
     border: .25rem solid rgba($black, .18)
+
+.container.is-sponsor
+  max-width: 50rem
+  +margin(horizontal, auto)
 
 .sponsor__logo-image
   +size(100%)
@@ -29,7 +31,7 @@
   flex-direction: column
 
 .sponsor__name-link
-  +text-block(1.5rem 1.45, $default-text)
+  +text-block(2rem 1.45, $default-text)
   font-family: 'Signika', sans-serif
   +hover-link
   transition: color .2s ease-in
@@ -39,7 +41,7 @@
     color: $accent-color
 
 .sponsor__url-link
-  +text-block(.8125rem 1.45, $muted-text)
+  +text-block(1rem 1.45, $muted-text)
   &:hover
     color: $accent-color
 
@@ -47,3 +49,17 @@
   font-size: 16px
   line-height: 1.6
   margin-top: 22px
+
+.ticket-sponsor
+  margin-top: 1rem
+  text-align: center
+
+.ticket-sponsor__label
+  +text-block(.75rem 1.45, 400)
+
+.ticket-sponsor__link
+  &:hover
+    opacity: .7
+
+.ticket-sponsor__logo
+  +size(200px auto)
