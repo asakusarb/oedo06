@@ -55,6 +55,10 @@
                 </a>
               </li>
               <li class='header-nav__item'>
+                <a href="#party" class="header-nav__item-link" data-scroll="">パーティー
+                </a>
+              </li>
+              <li class='header-nav__item'>
                 <a href="https://twitter.com/oedorubykaigi" target="_blank" class="header-nav__item-link is-icon"><i class='fa fa-twitter'></i>
                 </a>
               </li>
@@ -505,12 +509,16 @@
             </h1>
           </header>
           <div class='section__body'>
+            <h2 class='venue__name'>
+              <a href="http://solacity.jp/cc/index.html" class="venue__name-link" target="_blank">ソラシティカンファレンスセンター
+              </a>
+            </h2>
             <div class='row'>
               <div class='col-md-6 col-xs-12'>
                 <div class='section__content venue-address'>
-                  <h2 class='venue__name section__secondary-headding'>
-                    ソラシティカンファレンスセンター
-                  </h2>
+                  <h3 class='section__primary-label venue__access-title'>
+                    所在地
+                  </h3>
                   <address class='venue__address'>
                     東京都千代田区神田駿河台 4-6
                     <br class='is-hidden-md-up'>
@@ -549,33 +557,77 @@
         </div>
       </div>
     </section>
-    <section class='section'>
+    <section class='section' id='party'>
       <div class='container'>
-        <div class='section__inner'>
-          <header class='section__header'>
-            <h1 class='section__primary-headding'>
-              スポンサー
+        <div class='party'>
+          <header class='party__header'>
+            <h1 class='party__title'>
+              パーティー
             </h1>
+            <img src="images/flags-left.svg" class="party__flags is-left" alt="Flags left" />
+            <img src="images/flags-right.svg" class="party__flags is-right" alt="Flags right" />
           </header>
-          <div class='section__body'>
-            <div class='row'>
-              <div class='col-md-6 col-xs-12'>
-                <div class='sponsor' id='cookpad'>
-                  <div class='sponsor__logo'>
-                    <a href="https://cookpad.com/" target="_blank"><img src="images/sponsors/cookpad.png" class="sponsor__logo-image" alt="Cookpad" /></a>
-                  </div>
-                  <div class='sponsor-list__overview'>
-                    <h3 class='sponsor__name'>
-                      <a href="https://cookpad.com/" class="sponsor__name-link" target="_blank">Cookpad Inc.</a>
-                    </h3>
-                    <div class='sponsor__url'>
-                      <a href="https://cookpad.com/" class="sponsor__url-link" target="_blank">https://cookpad.com/</a>
-                    </div>
-                  </div>
-                </div>
+          <div class='party__body'>
+            <div class='party__content venue-address'>
+              <h2 class='party__secondary-headding'>
+                <span class="party__secondary-headding-label">会場</span>:
+                <a href="http://www.cafe1045.com" class="party__secondary-headding-link" target="_blank">cafe 104.5
+                </a>
+              </h2>
+              <time class='party__time'>
+                開始時間: 18:00
+              </time>
+              <address class='venue__address'>
+                東京都千代田区神田淡路町2-101
+                <br>
+                ワテラスタワー 2F
+              </address>
+              <div class='venue__map'>
+                <a href="https://goo.gl/E5CWM9" class="party__map-link" target="_blank"><i class='fa fa-map-marker'></i>
+                Google Map
+                </a>
+              </div>
+            </div>
+            <a href="https://asakusarb.doorkeeper.jp/events/58018" class="party__link-button" target="_blank"><span class='party__link-button-label'>
+              参加登録
+            </span>
+            <span class='party__link-button-price'>
+              6,000円 前払い
+            </span>
+            </a>
+            <img src="images/beer.svg" class="party__beer" alt="Beer" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='sponsors'>
+      <div class='container is-sponsor'>
+        <header class='sponsors__header'>
+          <h1 class='section__primary-headding is-text-align-center'>
+            スポンサー
+          </h1>
+        </header>
+        <div class='section__body is-sponsor'>
+          <div class='sponsor' id='cookpad'>
+            <div class='sponsor__logo'>
+              <a href="https://cookpad.com/" target="_blank"><img src="images/sponsors/cookpad.png" class="sponsor__logo-image" alt="Cookpad" /></a>
+            </div>
+            <div class='sponsor-list__overview'>
+              <h3 class='sponsor__name'>
+                <a href="https://cookpad.com/" class="sponsor__name-link" target="_blank">Cookpad Inc.</a>
+              </h3>
+              <div class='sponsor__url'>
+                <a href="https://cookpad.com/" class="sponsor__url-link" target="_blank">https://cookpad.com/</a>
               </div>
             </div>
           </div>
+        </div>
+        <div class='ticket-sponsor'>
+          <h2 class='ticket-sponsor__label'>
+            チケット販売スポンサー
+          </h2>
+          <a href="https://www.doorkeeper.jp/" target="_blank" class="ticket-sponsor__link"><img src="images/sponsors/doorkeeper-white.svg" class="ticket-sponsor__logo" alt="Doorkeeper" />
+          </a>
         </div>
       </div>
     </section>
