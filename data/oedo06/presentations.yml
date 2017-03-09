@@ -2,30 +2,26 @@
 keynote:
   type: Keynote
   speakers:
-  - id: keynote_1
+  - id: sora_h
 
 invited_1:
   type: 招待講演
   speakers:
-  - id: invited_1
-
-invited_2:
-  type: 招待講演
-  speakers:
-  - id: invited_2
+  - id: keiju_ishitsuka
 
 ninja_talks_1:
   type: Ninja Talk
   speakers:
-  - id: ninja_1
-  - id: ninja_2
-  - id: ninja_3
-  - id: ninja_4
-
+  - id: joker1007
+  - id: JuanitoFatas
+  - id: shugomaeda
 ninja_talks_2:
   type: Ninja Talk
-  speakers:
-  - id: ninja_5
-  - id: ninja_6
-  - id: ninja_7
-  - id: ninja_8
+  - id: soutaro
+  - id: ken_c_lo
+  - id: _tad_
+ninja_talks_3:
+  type: Ninja Talk
+  - id: ujm
+  - id: ko1
+  - id: rosylilly
