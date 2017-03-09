@@ -50,62 +50,62 @@ ninja_talks:
   ninja_1:
     id: rosylilly
     name: Sho Kusano
-    presentation_title: ninja_1 presentation_title
+    presentation_title: 如何にして若き天才コミッタは生まれるのか
     github_id: rosylilly
     twitter_id: rosylilly
     avatar_url: https://www.gravatar.com/avatar/36d7a7191914733c57032aa06687a497?s=320
   ninja_2:
     id: ujm
     name: Tatsuhiro Ujihisa
-    presentation_title: ninja_2 presentation_title
+    presentation_title: 未定
     github_id: ujihisa
     twitter_id: ujm
     avatar_url: /images/speakers/ujishita.jpg
   ninja_3:
     id: _tad_
     name: 斎藤ただし
-    presentation_title: ninja_3 presentation_title
+    presentation_title: Rationalを（もうちょっと）最適化してみた
     github_id: tadd
     twitter_id: _tad_
     avatar_url: https://www.gravatar.com/avatar/852ee3dd3c2f9889e49cbec473a58e75?s=320
   ninja_4:
     id: ko1
     name: 笹田耕一
-    presentation_title: ninja_4 presentation_title
+    presentation_title: Ruby 2.4 Internals
     github_id: ko1
     avatar_url: https://www.gravatar.com/avatar/990397e8b38d6f5f4ae8ff343e8b883a?s=320
   ninja_5:
     id: ken_c_lo
     name: 赤塚 妙子
-    presentation_title: ninja_5 presentation_title
+    presentation_title: esaとRubyistと私（仮）
     github_id: taea
     twitter_id: ken_c_lo
     avatar_url: https://avatars2.githubusercontent.com/u/341101
   ninja_6:
     id: joker1007
     name: 橋立友宏
-    presentation_title: ninja_6 presentation_title
+    presentation_title: Docker時代の分散RSpec環境の作り方
     github_id: joker1007
     twitter_id: joker1007
     avatar_url: https://www.gravatar.com/avatar/a5e5ee2fb9e4ce3c728ed9e3ef6e916f?s=320
   ninja_7:
     id: soutaro
     name: 松本宗太郎
-    presentation_title: ninja_7 presentation_title
+    presentation_title: 多相型、推論、Ruby
     github_id: soutaro
     twitter_id: soutaro
     avatar_url: https://www.gravatar.com/avatar/1fab9d01b25e99522f3dfd01e3d4cb51?s=320
   ninja_8:
     id: JuanitoFatas
     name: Juanito Fatas
-    presentation_title: ninja_8 presentation_title
+    presentation_title: My Open Source Journey
     github_id: JuanitoFatas
     twitter_id: JuanitoFatas
     avatar_url: https://avatars0.githubusercontent.com/u/1000669
   ninja_9:
     id: shugomaeda
     name: 前田修吾
-    presentation_title: ninja_9 presentation_title
+    presentation_title: Text Editing in Ruby
     github_id: shugo
     twitter_id: shugomaeda
     avatar_url: https://www.gravatar.com/avatar/18a797893e6768e048c1d15429f96bb4?s=320
