@@ -14,10 +14,6 @@ events:
   name: Ninja Talks
   talks:
     ninja_talks_1
-- type: break
-  begin: '11:05'
-  end: '11:10'
-  name: 5分休憩
 - type: talk
   begin: '11:10'
   end: '11:50'
@@ -34,10 +30,6 @@ events:
   name: Ninja Talks
   talks:
     ninja_talks_2
-- type: break
-  begin: '14:10'
-  end: '14:15'
-  name: 5分休憩
 - type: talk
   begin: '14:15'
   end: '15:00'
@@ -54,10 +46,6 @@ events:
   name: Ninja Talks
   talks:
     ninja_talks_3
-- type: break
-  begin: '16:15'
-  end: '16:20'
-  name: 5分休憩
 - type: keynote
   begin: '16:20'
   end: '17:00'
