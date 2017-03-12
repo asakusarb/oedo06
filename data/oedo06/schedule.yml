@@ -1,52 +1,66 @@
 ---
 events:
 - type: break
-  begin: '09:30'
+  begin: '09:00'
   end: '10:00'
-  name: Registration Open
+  name: 開場
 - type: break
   begin: '10:00'
-  end: '10:10'
-  name: Opening
-- type: keynote
-  begin: '10:10'
-  end: '11:00'
-  name: Keynote
-  talks:
-    keynote
+  end: '10:05'
+  name: ごあいさつ
 - type: talk
-  begin: '11:20'
-  end: '12:00'
-  name: Ninja Talks 1
+  begin: '10:05'
+  end: '11:05'
+  name: Ninja Talks
   talks:
     ninja_talks_1
 - type: break
-  begin: '12:00'
-  end: '13:30'
+  begin: '11:05'
+  end: '11:10'
+  name: 5分休憩
+- type: talk
+  begin: '11:10'
+  end: '11:50'
+  name: 招待講演
+  talks:
+    invited
+- type: break
+  begin: '11:50'
+  end: '13:10'
   name: Lunch Break
 - type: talk
-  begin: '13:30'
+  begin: '13:10'
   end: '14:10'
-  name: Ninja Talks 2
+  name: Ninja Talks
   talks:
     ninja_talks_2
 - type: break
+  begin: '14:10'
+  end: '14:15'
+  name: 5分休憩
+- type: talk
+  begin: '14:15'
+  end: '15:00'
+  name: フルタイム<br class="is-hidden-sm-down">コミッター大戦
+  talks:
+    full_time_ruby_committers
+- type: break
   begin: '15:00'
-  end: '15:30'
+  end: '15:15'
   name: Afternoon Break
 - type: talk
+  begin: '15:15'
+  end: '16:15'
+  name: Ninja Talks
+  talks:
+    ninja_talks_3
+- type: break
+  begin: '16:15'
+  end: '16:20'
+  name: 5分休憩
+- type: keynote
   begin: '16:20'
   end: '17:00'
-  name: 招待講演
+  name: Keynote
   talks:
-    invited_1
-- type: talk
-  begin: '17:10'
-  end: '17:50'
-  name: 招待講演
-  talks:
-    invited_2
-- type: break
-  begin: '17:50'
-  end: '18:00'
-  name: Closing
+    keynote
