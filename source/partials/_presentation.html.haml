@@ -3,15 +3,19 @@
 
 %ul.schedule-table__speakers
   - presentation.speakers.each do |speaker|
-    - speaker = data.oedo06.speakers.keynotes[speaker.id] || data.oedo06.speakers.invited[speaker.id] || data.oedo06.speakers.ninja_talks[speaker.id]
+    - speaker = data.oedo06.speakers.keynotes[speaker.id] || data.oedo06.speakers.invited[speaker.id] || data.oedo06.speakers.full_time_ruby_committers[speaker.id] || data.oedo06.speakers.ninja_talks[speaker.id]
     %li.schedule-table-speaker
       .schedule-table-speaker__avatar
         = image_tag(speaker.avatar_url)
       .schedule-table-speaker__data
         .schedule-table-speaker__presentation-title
-          = speaker.presentation_title
-        .schedule-table-speaker__names
-          %span.schedule-table-speaker__name
+          - if speaker.presentation_title.present?
+            = speaker.presentation_title
+          - else
             = speaker['name']
+        .schedule-table-speaker__names
+          - if speaker.presentation_title.present?
+            %span.schedule-table-speaker__name
+              = speaker['name']
           %span.schedule-table-speaker__id
             = "@#{speaker['id']}"

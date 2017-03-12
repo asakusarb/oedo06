@@ -1,108 +1,104 @@
 ---
 keynotes:
-  keynote_1:
+  sora_h:
     id: sora_h
     name: Sorah Fukumori
-    presentation_title: keynote_1 presentation_title
+    presentation_title: Keynote
     github_id: sorah
     twitter_id: sora_h
     avatar_url: https://img.sorah.jp/icon2017.rect-a.480.png
 
 invited:
-  invited_1:
+  keiju_ishitsuka:
     id: keiju_ishitsuka
     name: 石塚圭樹
-    presentation_title: invited_1 presentation_title
+    presentation_title: 招待講演
     github_id: keiju
     twitter_id: keiju_ishitsuka
     avatar_url: /images/speakers/blank.png
 
 full_time_ruby_committers:
-  full_time_ruby_committers_1:
+  n0kada:
     id: n0kada
     name: 中田伸悦
-    presentation_title: full_time_ruby_committers_1 presentation_title
     github_id: nobu
     twitter_id: n0kada
     avatar_url: https://www.gravatar.com/avatar/f1d6cc2b735bfd82c8773172da2aeab9?s=320
-  full_time_ruby_committers_2:
+  shyouhei:
     id: shyouhei
     name: Urabe Shyouhei
-    presentation_title: full_time_ruby_committers_2 presentation_title
     github_id: shyouhei
     twitter_id: shyouhei
     avatar_url: https://www.gravatar.com/avatar/9d2f78236e45a335301ba1195026105d?s=320
-  full_time_ruby_committers_3:
+  ko1_commiter:
     id: ko1
     name: 笹田耕一
-    presentation_title: full_time_ruby_committers_3 presentation_title
     github_id: ko1
     avatar_url: https://www.gravatar.com/avatar/990397e8b38d6f5f4ae8ff343e8b883a?s=320
-  full_time_ruby_committers_4:
+  mrkn:
     id: mrkn
     name: Kenta Murata
-    presentation_title: full_time_ruby_committers_3 presentation_title
     twitter_id: mrkn
     github_id: mrkn
     avatar_url: https://www.gravatar.com/avatar/819b3c0a25f9708fd32261b8ae2d23f6?s=320
 
 ninja_talks:
-  ninja_1:
+  rosylilly:
     id: rosylilly
     name: Sho Kusano
     presentation_title: 如何にして若き天才コミッタは生まれるのか
     github_id: rosylilly
     twitter_id: rosylilly
     avatar_url: https://www.gravatar.com/avatar/36d7a7191914733c57032aa06687a497?s=320
-  ninja_2:
+  ujm:
     id: ujm
     name: Tatsuhiro Ujihisa
     presentation_title: 未定
     github_id: ujihisa
     twitter_id: ujm
     avatar_url: /images/speakers/ujishita.jpg
-  ninja_3:
+  _tad_:
     id: _tad_
     name: 斎藤ただし
     presentation_title: Rationalを（もうちょっと）最適化してみた
     github_id: tadd
     twitter_id: _tad_
     avatar_url: https://www.gravatar.com/avatar/852ee3dd3c2f9889e49cbec473a58e75?s=320
-  ninja_4:
+  ko1:
     id: ko1
     name: 笹田耕一
     presentation_title: Ruby 2.4 Internals
     github_id: ko1
     avatar_url: https://www.gravatar.com/avatar/990397e8b38d6f5f4ae8ff343e8b883a?s=320
-  ninja_5:
+  ken_c_lo:
     id: ken_c_lo
     name: 赤塚 妙子
     presentation_title: esaとRubyistと私（仮）
     github_id: taea
     twitter_id: ken_c_lo
     avatar_url: https://avatars2.githubusercontent.com/u/341101
-  ninja_6:
+  joker1007:
     id: joker1007
     name: 橋立友宏
     presentation_title: Docker時代の分散RSpec環境の作り方
     github_id: joker1007
     twitter_id: joker1007
     avatar_url: https://www.gravatar.com/avatar/a5e5ee2fb9e4ce3c728ed9e3ef6e916f?s=320
-  ninja_7:
+  soutaro:
     id: soutaro
     name: 松本宗太郎
     presentation_title: 多相型、推論、Ruby
     github_id: soutaro
     twitter_id: soutaro
     avatar_url: https://www.gravatar.com/avatar/1fab9d01b25e99522f3dfd01e3d4cb51?s=320
-  ninja_8:
+  JuanitoFatas:
     id: JuanitoFatas
     name: Juanito Fatas
     presentation_title: My Open Source Journey
     github_id: JuanitoFatas
     twitter_id: JuanitoFatas
     avatar_url: https://avatars0.githubusercontent.com/u/1000669
-  ninja_9:
+  shugomaeda:
     id: shugomaeda
     name: 前田修吾
     presentation_title: Text Editing in Ruby

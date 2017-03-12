@@ -2,9 +2,13 @@
   width: 100%
 
 .schedule-table__item
-  border-bottom: solid .0625rem rgba(white, .06)
+  border-bottom: dotted .0625rem rgba(white, .3)
   display: flex
-  +padding(vertical, .75rem)
+  +padding(vertical, 1rem)
+  &:nth-child(odd)
+    background-color: rgba(white, .05)
+  &:nth-child(even)
+    background-color: rgba(black, .05)
   &:last-child
     border-bottom: none
   +media-breakpoint-down(sm)
@@ -23,7 +27,9 @@
   width: 10rem
   +text-block(1rem 1.5, 600)
   font-family: 'Roboto Mono', monospace
+  flex: 0 0 10rem
   +media-breakpoint-down(sm)
+    flex: 0 0 auto
     width: 100%
     background-color: rgba(black, .2)
     +text-block(.875rem 1.5)
@@ -41,7 +47,10 @@
   align-items: center
   justify-content: center
   font-family: 'Signika', sans-serif
+  flex: 0 0 12.5rem
   +media-breakpoint-down(sm)
+    font-size: .875rem
+    flex: 0 0 auto
     +padding(vertical, .375rem)
     width: 100%
     border-bottom: dotted .0625rem rgba(white, .4)
@@ -50,11 +59,14 @@
 
 .schedule-table__speakers
   +media-breakpoint-down(sm)
-    padding: .5rem
+    padding: .5rem .75rem
 
 .schedule-table-speaker
   display: flex
   margin-bottom: .75rem
+  padding-right: .75rem
+  +media-breakpoint-down(sm)
+    padding-right: 0
   &:last-child
     margin-bottom: 0
 
@@ -66,7 +78,10 @@
   margin-right: .75rem
   border-radius: .1875rem
   overflow: hidden
+  flex: 0 0 3rem
 
 .schedule-table-speaker__presentation-title
-  +text-block(1rem 1.5, flex center 600)
+  +text-block(.9375rem 1.5, flex 600)
   font-family: 'Signika', sans-serif
+  +media-breakpoint-down(sm)
+    font-size: .8125rem

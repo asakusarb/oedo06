@@ -24,20 +24,29 @@
 		background-position: center
 		+position(absolute, left 0, top -4rem)
 
-.page-footer__license,
-.page-footer__design
-	font-size: 12px
+.footer-license
+	font-size: .875rem
 	line-height: 1.5
+	display: block
+	margin-bottom: .75rem
+	+position(relative, 1)
 
-.page-footer__license-link
-	color: $white
-	font-size: 12px
+.footer-designers
+	font-size: .75rem
 	line-height: 1.5
+	display: block
+	+position(relative, 1)
+
+.footer-license__link
+	color: $default-text
 	&:hover
 		text-decoration: underline
-	.page-footer__design-link
-	color: $white
-	font-size: 12px
-	line-height: 1.5
+
+.footer-designers__item
+	&:not(:last-child)
+	margin-bottom: .25rem
+
+.footer-designers__link
+	color: $default-text
 	&:hover
 		text-decoration: underline

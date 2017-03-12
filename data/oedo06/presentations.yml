@@ -4,10 +4,18 @@ keynote:
   speakers:
   - id: sora_h
 
-invited_1:
+invited:
   type: 招待講演
   speakers:
   - id: keiju_ishitsuka
+
+full_time_ruby_committers:
+  type: フルタイムコミッター大戦
+  speakers:
+  - id: n0kada
+  - id: shyouhei
+  - id: ko1_commiter
+  - id: mrkn
 
 ninja_talks_1:
   type: Ninja Talk
@@ -15,13 +23,17 @@ ninja_talks_1:
   - id: joker1007
   - id: JuanitoFatas
   - id: shugomaeda
+
 ninja_talks_2:
   type: Ninja Talk
+  speakers:
   - id: soutaro
   - id: ken_c_lo
   - id: _tad_
+
 ninja_talks_3:
   type: Ninja Talk
+  speakers:
   - id: ujm
   - id: ko1
   - id: rosylilly
