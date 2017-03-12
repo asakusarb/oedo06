@@ -37,3 +37,48 @@ ninja_talks_3:
   - id: ujm
   - id: ko1
   - id: rosylilly
+
+joker1007:
+  type: Ninja Talk
+  speakers:
+  - id: joker1007
+
+JuanitoFatas:
+  type: Ninja Talk
+  speakers:
+  - id: JuanitoFatas
+
+shugomaeda:
+  type: Ninja Talk
+  speakers:
+  - id: shugomaeda
+
+soutaro:
+  type: Ninja Talk
+  speakers:
+  - id: soutaro
+
+ken_c_lo:
+  type: Ninja Talk
+  speakers:
+  - id: ken_c_lo
+
+_tad_:
+  type: Ninja Talk
+  speakers:
+  - id: _tad_
+
+ujm:
+  type: Ninja Talk
+  speakers:
+  - id: ujm
+
+ko1:
+  type: Ninja Talk
+  speakers:
+  - id: ko1
+
+rosylilly:
+  type: Ninja Talk
+  speakers:
+  - id: rosylilly

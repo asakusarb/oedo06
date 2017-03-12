@@ -10,10 +10,22 @@ events:
   name: ごあいさつ
 - type: talk
   begin: '10:05'
-  end: '11:05'
-  name: Ninja Talks
+  end: '10:25'
+  name: Ninja Talk
   talks:
-    ninja_talks_1
+    joker1007
+- type: talk
+  begin: '10:25'
+  end: '10:45'
+  name: Ninja Talk
+  talks:
+    JuanitoFatas
+- type: talk
+  begin: '10:45'
+  end: '11:05'
+  name: Ninja Talk
+  talks:
+    shugomaeda
 - type: break
   begin: '11:05'
   end: '11:10'
@@ -30,10 +42,22 @@ events:
   name: Lunch Break
 - type: talk
   begin: '13:10'
-  end: '14:10'
-  name: Ninja Talks
+  end: '13:30'
+  name: Ninja Talk
   talks:
-    ninja_talks_2
+    soutaro
+- type: talk
+  begin: '13:30'
+  end: '13:50'
+  name: Ninja Talk
+  talks:
+    ken_c_lo
+- type: talk
+  begin: '13:50'
+  end: '14:10'
+  name: Ninja Talk
+  talks:
+    _tad_
 - type: break
   begin: '14:10'
   end: '14:15'
@@ -50,10 +74,22 @@ events:
   name: Afternoon Break
 - type: talk
   begin: '15:15'
-  end: '16:15'
-  name: Ninja Talks
+  end: '15:35'
+  name: Ninja Talk
   talks:
-    ninja_talks_3
+    ujm
+- type: talk
+  begin: '15:35'
+  end: '15:55'
+  name: Ninja Talk
+  talks:
+    ko1
+- type: talk
+  begin: '15:55'
+  end: '16:15'
+  name: Ninja Talk
+  talks:
+    rosylilly
 - type: break
   begin: '16:15'
   end: '16:20'
