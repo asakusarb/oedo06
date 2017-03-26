@@ -19,3 +19,6 @@
               = speaker['name']
           %span.schedule-table-speaker__id
             = "@#{speaker['id']}"
+      - if speaker.slide_url.present?
+        = link_to speaker.slide_url, class: "schedule-table-speaker__slide", target: "_blank" do
+          スライド
