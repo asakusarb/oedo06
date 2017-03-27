@@ -1,6 +1,9 @@
 .schedule-table
   width: 100%
 
+.schedule-table__td
+  width: 100%
+
 .schedule-table__item
   border-bottom: dotted .0625rem rgba(white, .3)
   display: flex
@@ -38,8 +41,13 @@
 
 .schedule-table__content
   display: flex
+  width: 100%
   +media-breakpoint-down(sm)
     flex-direction: column
+
+.schedule-table-speaker__data
+  flex: 100
+  +margin(horizontal, .75rem)
 
 .schedule-table__name
   width: 12.5rem
@@ -58,6 +66,7 @@
       border-bottom: none
 
 .schedule-table__speakers
+  width: 100%
   +media-breakpoint-down(sm)
     padding: .5rem .75rem
 
@@ -75,7 +84,6 @@
 
 .schedule-table-speaker__avatar
   +size(3rem auto)
-  margin-right: .75rem
   border-radius: .1875rem
   overflow: hidden
   flex: 0 0 3rem
@@ -85,3 +93,20 @@
   font-family: 'Signika', sans-serif
   +media-breakpoint-down(sm)
     font-size: .8125rem
+
+.schedule-table-speaker__slide
+  flex: 0 0 4rem
+  +size(4rem 1.75rem)
+  background-color: $accent-color
+  +text-block(.625rem 1, flex $base-color 600)
+  box-shadow: $accent-color 0 0 0 .0625rem inset
+  align-items: center
+  justify-content: center
+  border-radius: .25rem
+  transition: background-color .2s ease-in
+  +media-breakpoint-down(sm)
+    flex: 0 0 3.5rem
+    +size(3.5rem 1.75rem)
+  &:hover
+    background-color: rgba($accent-color, .9)
+    opacity: .8
